@@ -436,7 +436,6 @@
     <!-- ── Hamburger móvil ── -->
     <button id="btn-hamburger" class="md:hidden flex items-center justify-center w-10 h-10 text-on-surface hover:text-tertiary transition-colors duration-300 flex-shrink-0" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">
       <span id="icon-menu" class="material-symbols-outlined" style="font-size:26px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;">menu</span>
-      <span id="icon-close" class="material-symbols-outlined hidden" style="font-size:26px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;">close</span>
     </button>
 
   </nav>
@@ -1177,26 +1176,18 @@
   (function () {
     var nav      = document.getElementById('main-nav');
     var drawer   = document.getElementById('mobile-drawer');
-    var btnHamb  = document.getElementById('btn-hamburger');
-    var iconMenu = document.getElementById('icon-menu');
-    var iconX    = document.getElementById('icon-close');
-
-    function openDrawer() {
+    var btnHamb  = document.getElementById('btn-hamburger');    function openDrawer() {
       drawer.classList.add('is-open');
       drawer.setAttribute('aria-hidden', 'false');
       btnHamb.setAttribute('aria-expanded', 'true');
-      iconMenu.classList.add('hidden');
-      iconX.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
+      iconMenu.classList.add('hidden');      document.body.style.overflow = 'hidden';
     }
 
     function closeDrawer() {
       drawer.classList.remove('is-open');
       drawer.setAttribute('aria-hidden', 'true');
       btnHamb.setAttribute('aria-expanded', 'false');
-      iconMenu.classList.remove('hidden');
-      iconX.classList.add('hidden');
-      document.body.style.overflow = '';
+      iconMenu.classList.remove('hidden');      document.body.style.overflow = '';
     }
 
     btnHamb.addEventListener('click', function () {
