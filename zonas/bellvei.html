@@ -1,0 +1,945 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Cerrajero urgente en Bellvei: 25-30 min, presupuesto cerrado. Apertura sin rotura para viviendas rurales y masías del Baix Penedès. ☎ +34 627 682 821"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.keyroncerrajeros.es/zonas/bellvei.html"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="es_ES"/>
+  <meta property="og:title" content="Cerrajero Urgente en Bellvei 24h · Presupuesto Cerrado | Keyron Cerrajeros"/>
+  <meta property="og:description" content="Cerrajero urgente en Bellvei: acceso rápido por AP-7, viviendas rurales y masías. 25-30 min con presupuesto cerrado. Sin recargos. ☎ +34 627 682 821"/>
+  <meta property="og:url" content="https://www.keyroncerrajeros.es/zonas/bellvei.html"/>
+  <meta property="og:image" content="https://www.keyroncerrajeros.es/img/og/og-image.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <!-- Geo meta (SEO local) -->
+  <meta name="geo.region" content="ES-T"/>
+  <meta name="geo.placename" content="Bellvei, Tarragona"/>
+  <meta name="geo.position" content="41.2641;1.5108"/>
+  <meta name="ICBM" content="41.2641, 1.5108"/>
+
+  <title>Cerrajero Urgente en Bellvei 24h | Keyron Cerrajeros</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="../dist/tailwind.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(160deg, #0f172a 0%, #121f38 55%, #0d1a2e 100%);
+      background-attachment: fixed;
+    }
+    p, li { line-height: 1.7; letter-spacing: 0.012em; }
+    .text-on-surface-variant { letter-spacing: 0.01em; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .material-symbols-filled {
+      font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .alloy-gradient {
+      background: linear-gradient(135deg, #c2ceea 0%, #1d2f46 100%);
+    }
+    .cta-call {
+      background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+      box-shadow: 0 0 22px rgba(245,158,11,0.22), 0 4px 18px rgba(234,88,12,0.28);
+      transition: background 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+    }
+    .cta-call:hover {
+      background: linear-gradient(135deg, #fbbf24 0%, #f97316 100%);
+      box-shadow: 0 0 38px rgba(251,191,36,0.38), 0 6px 28px rgba(249,115,22,0.42);
+      transform: translateY(-1px);
+    }
+    .cta-call:active { transform: translateY(0); }
+    .depth-card {
+      background: linear-gradient(145deg, rgba(36,55,83,0.72) 0%, rgba(29,47,70,0.62) 100%);
+      border: 1px solid rgba(100,160,210,0.10);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow:
+        inset 0 1px 0 rgba(130,170,220,0.07),
+        0 8px 36px rgba(0,0,0,0.38),
+        0 0 70px rgba(130,165,225,0.04);
+    }
+    .glow-container {
+      box-shadow:
+        0 0 60px rgba(120,160,220,0.06),
+        0 0 120px rgba(100,140,200,0.035),
+        0 20px 52px rgba(0,0,0,0.42);
+    }
+    .card-hover {
+      transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 52px rgba(0,0,0,0.46), 0 0 44px rgba(120,160,220,0.09);
+      border-color: rgba(100,155,215,0.22) !important;
+    }
+    .tertiary-glow { transition: box-shadow 200ms ease; }
+    .tertiary-glow:hover {
+      box-shadow: 0 0 28px rgba(233,193,118,0.30), 0 4px 16px rgba(233,193,118,0.18);
+    }
+    #main-nav {
+      transition: background-color 250ms ease, box-shadow 250ms ease,
+                  border-bottom-color 250ms ease, backdrop-filter 250ms ease;
+      border-bottom: 1px solid transparent;
+    }
+    #main-nav.is-scrolled {
+      background-color: rgba(15,23,42,0.96);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border-bottom-color: rgba(55,90,140,0.28);
+      box-shadow: 0 1px 0 rgba(80,130,190,0.12), 0 8px 48px rgba(0,0,0,0.52);
+    }
+    #mobile-drawer {
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+    }
+    #mobile-drawer.is-open {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+    @keyframes steel-pulse {
+      0%,100% { box-shadow: 0 0 0 0 rgba(233,193,118,0.50); }
+      50%      { box-shadow: 0 0 0 7px rgba(233,193,118,0.00); }
+    }
+    .animate-pulse { animation: steel-pulse 2.2s ease-in-out infinite; }
+    a { transition: color 180ms ease; }
+    button, [role="button"] { transition: all 180ms ease; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+    .fab-pill {
+      display: inline-flex;
+      align-items: center;
+      height: 52px;
+      width: 52px;
+      border-radius: 9999px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: width 280ms cubic-bezier(0.4, 0, 0.2, 1),
+                  box-shadow 200ms ease,
+                  opacity 200ms ease;
+      text-decoration: none;
+    }
+    .fab-pill:hover  { width: 192px; }
+    .fab-pill:focus-visible { outline: 2px solid rgba(212,174,94,0.7); outline-offset: 3px; }
+    .fab-pill-call {
+      background: rgba(9,16,32,0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(212,174,94,0.35);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 0 0 1px rgba(212,174,94,0.08);
+    }
+    .fab-pill-call:hover {
+      box-shadow: 0 6px 28px rgba(0,0,0,0.6), 0 0 16px rgba(212,174,94,0.12);
+      border-color: rgba(212,174,94,0.55);
+    }
+    .fab-pill-wa {
+      background: rgba(9,16,32,0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(37,211,102,0.3);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 0 0 1px rgba(37,211,102,0.06);
+    }
+    .fab-pill-wa:hover {
+      box-shadow: 0 6px 28px rgba(0,0,0,0.6), 0 0 16px rgba(37,211,102,0.1);
+      border-color: rgba(37,211,102,0.5);
+    }
+    .fab-icon {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .fab-label {
+      white-space: nowrap;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding-right: 20px;
+      opacity: 0;
+      transition: opacity 140ms ease 120ms;
+    }
+    .fab-pill:hover .fab-label { opacity: 1; }
+    .mobile-cta-bar {
+      background: rgba(9, 16, 32, 0.97);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid rgba(212,174,94,0.18);
+    }
+    .mobile-cta-call {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 0;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #d4ae5e;
+      border-right: 1px solid rgba(255,255,255,0.06);
+      transition: background 200ms ease;
+    }
+    .mobile-cta-call:hover { background: rgba(212,174,94,0.07); }
+    .mobile-cta-wa {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 0;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #25D366;
+      transition: background 200ms ease;
+    }
+    .mobile-cta-wa:hover { background: rgba(37,211,102,0.06); }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .faq-item:first-of-type { border-top: 1px solid rgba(255,255,255,0.06); }
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.5rem 0;
+      user-select: none;
+      outline: none;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary:focus-visible {
+      outline: 2px solid rgba(212,174,94,0.6);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+    .faq-chevron {
+      flex-shrink: 0;
+      transition: transform 200ms ease, color 200ms ease;
+      color: rgba(212,174,94,0.5);
+    }
+    .faq-item[open] .faq-chevron {
+      transform: rotate(180deg);
+      color: #d4ae5e;
+    }
+    .faq-item[open] summary .faq-question { color: #d4ae5e; }
+    .faq-body {
+      padding-bottom: 1.5rem;
+      padding-left: 3rem;
+    }
+    .faq-item summary:hover .faq-question { color: rgba(255,255,255,0.9); }
+    .faq-item summary:hover .faq-chevron { color: #d4ae5e; }
+    @keyframes hero-glow-drift {
+      0%,100% { transform: translateY(0px) scale(1.00); opacity: 0.10; }
+      50%      { transform: translateY(-20px) scale(1.06); opacity: 0.16; }
+    }
+    .hero-glow-blob {
+      animation: hero-glow-drift 10s ease-in-out infinite;
+      will-change: transform, opacity;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-glow-blob { animation: none !important; }
+    }
+    .cta-secondary {
+      background: rgba(9,16,32,0.55);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.10);
+      transition: background 220ms ease, border-color 220ms ease, color 220ms ease;
+    }
+    .cta-secondary:hover {
+      background: rgba(233,193,118,0.12);
+      border-color: rgba(233,193,118,0.40);
+      color: #e9c176;
+    }
+  </style>
+
+  <!-- Schema: LocalBusiness — Bellvei -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Locksmith",
+    "name": "Keyron Cerrajeros — Cerrajería Bellvei",
+    "description": "Cerrajero urgente en Bellvei disponible 24 horas. Apertura de puertas sin rotura en viviendas rurales, masías y casas de campo del término municipal de Bellvei. Acceso por AP-7. Respuesta en 25-30 minutos. Presupuesto cerrado.",
+    "telephone": "+34627682821",
+    "url": "https://www.keyroncerrajeros.es/zonas/bellvei.html",
+    "image": "https://www.keyroncerrajeros.es/img/og/og-image.png",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer de la Seguretat, S/N",
+      "addressLocality": "El Vendrell",
+      "addressRegion": "Tarragona",
+      "postalCode": "43700",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.2641,
+      "longitude": 1.5108
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Bellvei", "postalCode": "43719"},
+      {"@type": "City", "name": "L'Arboç", "postalCode": "43720"},
+      {"@type": "City", "name": "Santa Oliva", "postalCode": "43710"},
+      {"@type": "City", "name": "El Vendrell", "postalCode": "43700"}
+    ],
+    "openingHours": "Mo-Su 00:00-24:00"
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tardáis en llegar a Bellvei desde El Vendrell?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Entre 25 y 30 minutos. Accedemos por la AP-7 o por carreteras comarcales según la ubicación exacta dentro del término municipal. Al llamar te confirmamos el tiempo de llegada a tu dirección."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dáis presupuesto cerrado antes de desplazaros a Bellvei?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. El presupuesto se da por teléfono antes de salir. El precio acordado es el precio final: sin recargo por desplazamiento a Bellvei, sin coste extra por nocturnidad ni festivos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Podéis abrir puertas de masías y viviendas rurales en Bellvei?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Las masías y casas de campo de Bellvei suelen tener cerraduras de palanca, serreta o cerrojos reforzados de varias décadas. Trabajamos con técnicas no destructivas adaptadas a cada tipo. Si la cerradura necesita sustitución, te lo comunicamos antes de actuar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Atendéis Bellvei también de madrugada y los fines de semana?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Disponibles 24 horas, los 365 días del año. En una zona rural como Bellvei la urgencia no entiende de horarios — y nosotros tampoco. Sin recargo por horario nocturno ni festivo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿También instaláis cerraduras de alta seguridad en Bellvei?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Tras una apertura de urgencia, si decides mejorar la seguridad de tu vivienda instalamos bombines antibumping y antiextracción homologados bajo norma UNE EN 1303 en la misma visita. Extendemos garantía por escrito sobre materiales y trabajo."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.keyroncerrajeros.es/"},
+      {"@type": "ListItem", "position": 2, "name": "Zonas de Cobertura", "item": "https://www.keyroncerrajeros.es/#cobertura"},
+      {"@type": "ListItem", "position": 3, "name": "Bellvei", "item": "https://www.keyroncerrajeros.es/zonas/bellvei.html"}
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-background text-on-surface selection:bg-tertiary selection:text-on-tertiary pb-16 md:pb-0">
+
+<!-- ─── HEADER / NAV ─────────────────────────────────── -->
+<header>
+  <nav id="main-nav" class="fixed top-0 w-full z-50 bg-background/50 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 py-2" aria-label="Navegación principal">
+
+    <a href="../index.html" aria-label="Keyron Cerrajeros — Inicio">
+      <img
+        src="../img/logo/Gemini_Generated_Image_z8mq9nz8mq9nz8mq.svg"
+        alt="Keyron Cerrajeros — Cerrajería de Seguridad El Vendrell"
+        class="h-24 w-auto"
+      />
+    </a>
+
+    <ul class="hidden md:flex items-center gap-10 list-none">
+      <li>
+        <a class="text-on-surface-variant hover:text-tertiary tracking-widest font-medium uppercase text-[11px] transition-colors duration-300" href="../index.html">Inicio</a>
+      </li>
+      <li>
+        <a class="text-on-surface-variant hover:text-tertiary tracking-widest font-medium uppercase text-[11px] transition-colors duration-300" href="#zona">Zona</a>
+      </li>
+      <li>
+        <a class="text-on-surface-variant hover:text-tertiary tracking-widest font-medium uppercase text-[11px] transition-colors duration-300" href="#faq">FAQ</a>
+      </li>
+    </ul>
+
+    <a href="tel:+34627682821" class="hidden md:inline-flex bg-tertiary text-background px-6 py-2.5 font-black text-[11px] tracking-widest uppercase hover:bg-[#d4ae5e] transition-colors duration-300 items-center gap-2 flex-shrink-0">
+      <span class="material-symbols-outlined flex-shrink-0" aria-hidden="true" style="font-size:15px;font-variation-settings:'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 20;">call</span>
+      URGENCIAS 24H
+    </a>
+
+    <button id="btn-hamburger" class="md:hidden flex items-center justify-center w-10 h-10 text-on-surface hover:text-tertiary transition-colors duration-300 flex-shrink-0" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">
+      <span id="icon-menu" class="material-symbols-outlined" style="font-size:26px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;">menu</span>
+      <span id="icon-close" class="material-symbols-outlined hidden" style="font-size:26px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;">close</span>
+    </button>
+
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="fixed inset-0 z-40 flex flex-col md:hidden" aria-hidden="true" style="background: rgba(15,23,42,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
+    <div class="h-[88px] flex-shrink-0"></div>
+    <div class="w-full h-px" style="background: rgba(55,90,140,0.28);"></div>
+    <nav class="flex-1 flex flex-col justify-center items-center gap-7 px-8 py-10" aria-label="Menú móvil">
+      <a href="../index.html" class="drawer-link group flex items-center gap-4 text-on-surface hover:text-tertiary tracking-widest font-medium uppercase text-sm transition-colors duration-300">
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors duration-300" style="font-size:18px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 20;">home</span>
+        Inicio
+      </a>
+      <a href="#zona" class="drawer-link group flex items-center gap-4 text-on-surface hover:text-tertiary tracking-widest font-medium uppercase text-sm transition-colors duration-300">
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors duration-300" style="font-size:18px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 20;">map</span>
+        Zona
+      </a>
+      <a href="#faq" class="drawer-link group flex items-center gap-4 text-on-surface hover:text-tertiary tracking-widest font-medium uppercase text-sm transition-colors duration-300">
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors duration-300" style="font-size:18px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 20;">help_outline</span>
+        FAQ
+      </a>
+      <div class="w-10 h-px my-2" style="background: rgba(233,193,118,0.25);"></div>
+      <a href="tel:+34627682821" class="drawer-link inline-flex items-center gap-3 px-8 py-4 font-black text-sm tracking-widest uppercase transition-all duration-300" style="background: rgba(233,193,118,0.08); border: 1px solid rgba(233,193,118,0.28); color: #e9c176;">
+        <span class="material-symbols-outlined" style="font-size:20px;font-variation-settings:'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 20;color:#e9c176;">call</span>
+        627 682 821
+      </a>
+    </nav>
+    <div class="h-20 flex-shrink-0"></div>
+  </div>
+</header>
+
+<!-- ─── MAIN CONTENT ─────────────────────────────────── -->
+<main class="pt-20">
+
+  <!-- ── Hero ──────────────────────────────────────────── -->
+  <section id="inicio" class="relative flex items-center overflow-hidden py-28 md:py-40">
+    <div class="absolute inset-0 z-0">
+      <div class="hero-glow-blob absolute pointer-events-none rounded-full"
+           style="left:-8%; top:5%; width:560px; height:560px; background: radial-gradient(circle, rgba(233,193,118,0.14) 0%, rgba(233,193,118,0.05) 45%, transparent 68%);"
+           aria-hidden="true"></div>
+      <div class="absolute pointer-events-none rounded-full"
+           style="right:-6%; bottom:0%; width:420px; height:420px; background: radial-gradient(circle, rgba(194,206,234,0.09) 0%, rgba(194,206,234,0.03) 45%, transparent 68%);"
+           aria-hidden="true"></div>
+      <div class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent" aria-hidden="true"></div>
+      <div class="absolute inset-0 pointer-events-none"
+           style="opacity:0.04; background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E\");"
+           aria-hidden="true"></div>
+    </div>
+    <div class="relative z-10 w-full px-6 md:px-24 max-w-4xl">
+      <!-- Pill badge -->
+      <div class="mb-6 inline-flex items-center gap-2 px-4 py-1.5 border border-outline-variant/25"
+           style="background: rgba(9,16,32,0.72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);">
+        <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse" aria-hidden="true"></span>
+        <span class="text-[10px] tracking-[0.2em] font-bold text-on-surface-variant uppercase">Servicio activo · Bellvei · Zona rural · 24h</span>
+      </div>
+      <!-- H1 -->
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-on-surface mb-5 leading-[1.1]">
+        Cerrajero urgente en Bellvei —<br class="hidden md:block"/> masías, casas de campo<br/>y viviendas rurales: sin rotura.
+      </h1>
+      <!-- Subtítulo -->
+      <p class="text-base md:text-lg text-on-surface-variant mb-10 max-w-xl font-light leading-relaxed">
+        Llegamos a Bellvei en 25-30 minutos con presupuesto cerrado acordado antes de salir. Trabajamos con cerraduras de palanca, serreta y bombín antiguo habituales en viviendas rurales del Baix Penedès. Sin centralita, sin esperas, sin sorpresas en el precio.
+      </p>
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-4 mb-8">
+        <a href="tel:+34627682821" class="cta-call text-white px-8 py-4 font-bold tracking-widest uppercase text-sm hover:scale-[0.98] transition-all text-center inline-flex items-center justify-center gap-3">
+          <span class="material-symbols-outlined text-base" aria-hidden="true">call</span>
+          Llamar ahora — Atención inmediata
+        </a>
+        <a href="#servicios" class="cta-secondary text-on-surface px-8 py-4 font-bold tracking-widest uppercase text-sm text-center">
+          Ver servicios
+        </a>
+      </div>
+      <!-- Rating badge -->
+      <div class="inline-flex items-center gap-3 px-4 py-2 border border-outline-variant/20"
+           style="background: rgba(9,16,32,0.58); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+        <div class="flex text-tertiary" aria-label="Valoración 4,9 sobre 5 en Google">
+          <span class="material-symbols-outlined material-symbols-filled text-base" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled text-base" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled text-base" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled text-base" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled text-base" aria-hidden="true">star</span>
+        </div>
+        <span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">4,9 / 5 en Google</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Trust Bar ─────────────────────────────────────── -->
+  <section aria-label="Garantías del servicio" class="bg-surface-container-lowest py-12 px-6 md:px-24">
+    <ul class="grid grid-cols-1 md:grid-cols-4 gap-8 md:divide-x divide-outline-variant/20 list-none">
+      <li class="flex items-center gap-4 px-8 justify-center">
+        <span class="material-symbols-outlined text-tertiary text-3xl" aria-hidden="true">timer</span>
+        <div>
+          <p class="text-xs tracking-widest font-black uppercase text-primary">25-30 minutos</p>
+          <p class="text-[10px] tracking-widest text-on-surface-variant uppercase mt-0.5">Tiempo de respuesta</p>
+        </div>
+      </li>
+      <li class="flex items-center gap-4 px-8 justify-center">
+        <span class="material-symbols-outlined text-tertiary text-3xl" aria-hidden="true">verified_user</span>
+        <div>
+          <p class="text-xs tracking-widest font-black uppercase text-primary">Precio cerrado</p>
+          <p class="text-[10px] tracking-widest text-on-surface-variant uppercase mt-0.5">Acordado por teléfono</p>
+        </div>
+      </li>
+      <li class="flex items-center gap-4 px-8 justify-center">
+        <span class="material-symbols-outlined text-tertiary text-3xl" aria-hidden="true">contract</span>
+        <div>
+          <p class="text-xs tracking-widest font-black uppercase text-primary">Garantía por escrito</p>
+          <p class="text-[10px] tracking-widest text-on-surface-variant uppercase mt-0.5">En trabajos y materiales</p>
+        </div>
+      </li>
+      <li class="flex items-center gap-4 px-8 justify-center">
+        <span class="material-symbols-outlined text-tertiary text-3xl" aria-hidden="true">engineering</span>
+        <div>
+          <p class="text-xs tracking-widest font-black uppercase text-primary">Técnicos homologados</p>
+          <p class="text-[10px] tracking-widest text-on-surface-variant uppercase mt-0.5">Normativa española vigente</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ── Zona local ─────────────────────────────────────── -->
+  <section id="zona" class="py-24 px-6 md:px-24 bg-surface-container-lowest">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+        <!-- Texto local -->
+        <div>
+          <p class="text-sm tracking-[0.3em] font-bold text-tertiary uppercase mb-4">Cobertura local</p>
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-on-surface mb-6 leading-tight">
+            Cerrajero en Bellvei para quien vive en el campo todo el año.
+          </h2>
+          <p class="text-on-surface-variant font-light leading-relaxed mb-6">
+            Bellvei es un municipio pequeño del interior del Baix Penedès donde la mayoría de viviendas son casas unifamiliares, masías rehabilitadas o construcciones rurales con décadas de historia. Las cerraduras que encontramos en Bellvei son distintas a las de un bloque de pisos urbano: palancas antiguas, cerrojos de embutir, bombines de doble mapa o mecanismos que llevan años sin mantenimiento. Conocemos ese parque de cerraduras y aplicamos la técnica correcta en cada caso. Llegamos por la AP-7 o por carreteras comarcales en 25-30 minutos con presupuesto cerrado.
+          </p>
+          <p class="text-on-surface-variant font-light leading-relaxed text-sm">
+            Atendemos particulares, propietarios de masías, familias con segunda residencia en el entorno rural de Bellvei y comunidades de propietarios. Sin intermediarios: hablas directamente con el técnico que va a ir.
+          </p>
+        </div>
+
+        <!-- Bullets: por qué elegirnos -->
+        <div>
+          <p class="text-[10px] tracking-[0.25em] font-bold uppercase mb-8" style="color: rgba(212,174,94,0.7);">Lo que distingue nuestro servicio en Bellvei</p>
+          <ul class="flex flex-col gap-6 list-none">
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center mt-0.5"
+                   style="border: 1px solid rgba(212,174,94,0.22); background: rgba(212,174,94,0.07);">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true" style="color: #d4ae5e; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">cottage</span>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-on-surface mb-1">Experiencia en cerraduras de vivienda rural y masía</p>
+                <p class="text-[13px] text-on-surface-variant font-light">Las cerraduras de las viviendas de Bellvei no siguen los estándares de la construcción moderna. Trabajamos con palancas de grandes dimensiones, cerrojos de hierro forjado y sistemas de cierre que ya no se fabrican. La apertura sin rotura requiere conocer esos mecanismos — y los conocemos.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center mt-0.5"
+                   style="border: 1px solid rgba(212,174,94,0.22); background: rgba(212,174,94,0.07);">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true" style="color: #d4ae5e; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">route</span>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-on-surface mb-1">Acceso directo por AP-7 sin depender del tráfico costero</p>
+                <p class="text-[13px] text-on-surface-variant font-light">Bellvei está bien comunicado con la AP-7 y la N-340, lo que nos permite llegar en un tiempo predecible independientemente de la época del año. En verano, mientras las zonas costeras sufren atascos, el acceso al interior mantiene tiempos de llegada estables.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center mt-0.5"
+                   style="border: 1px solid rgba(212,174,94,0.22); background: rgba(212,174,94,0.07);">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true" style="color: #d4ae5e; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">night_shelter</span>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-on-surface mb-1">Servicio nocturno sin recargo en zona rural</p>
+                <p class="text-[13px] text-on-surface-variant font-light">Quedarse fuera de una masía de madrugada en invierno no es una situación menor. Estamos disponibles 24 horas, 365 días, con el mismo precio cerrado acordado por teléfono independientemente del horario. El desplazamiento a Bellvei no tiene sobrecoste.</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center mt-0.5"
+                   style="border: 1px solid rgba(212,174,94,0.22); background: rgba(212,174,94,0.07);">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true" style="color: #d4ae5e; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">shield_lock</span>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-on-surface mb-1">Actualización de seguridad en la misma visita</p>
+                <p class="text-[13px] text-on-surface-variant font-light">Si la cerradura de tu vivienda en Bellvei tiene años de antigüedad, es el momento de actualizarla. Instalamos bombines antibumping y antiextracción homologados en la misma visita de urgencia. Llevamos material en el vehículo y entregamos garantía por escrito.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Emergencias CTA ────────────────────────────────── -->
+  <section class="flex justify-center px-6 md:px-24 py-16 bg-surface">
+    <div class="max-w-lg w-full"
+         style="background:rgba(15,23,42,0.78); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border:1px solid rgba(255,255,255,0.08); box-shadow:0 8px 48px rgba(0,0,0,0.45), inset 0 1px 0 rgba(180,210,255,0.06); padding: clamp(2rem, 5vw, 3.5rem);">
+      <div class="inline-flex items-center gap-2 mb-6">
+        <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse" aria-hidden="true"></span>
+        <span class="text-[10px] tracking-[0.22em] font-bold text-tertiary uppercase">Disponible ahora · Bellvei 24h</span>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-on-surface mb-5 leading-[1.1]">
+        ¿Puerta cerrada en tu casa<br/>o masía de Bellvei?
+      </h2>
+      <p class="text-on-surface-variant text-base mb-3 font-light" style="line-height:1.7;">
+        Llave rota en la cerradura, cerrojo echado por dentro, palanca bloqueada o bombín deteriorado: lo resolvemos con <strong class="text-on-surface font-semibold">presupuesto cerrado antes de salir</strong> y apertura <strong class="text-on-surface font-semibold">sin rotura</strong> en la gran mayoría de casos.
+      </p>
+      <p class="text-on-surface-variant text-sm mb-10 font-light" style="line-height:1.7;">
+        Cubrimos todo el término municipal de Bellvei: núcleo urbano, masías y viviendas rurales dispersas. Disponibles cualquier día del año, a cualquier hora.
+      </p>
+      <a href="tel:+34627682821"
+         class="cta-call text-white px-10 py-5 font-bold tracking-widest uppercase text-sm inline-flex items-center gap-3">
+        <span class="material-symbols-outlined text-base" aria-hidden="true">call</span>
+        +34 627 682 821 — Llamar ahora
+      </a>
+    </div>
+  </section>
+
+  <!-- ── FAQ ───────────────────────────────────────────── -->
+  <section id="faq" class="py-32 px-6 md:px-24 bg-surface-container-low">
+    <div class="max-w-3xl mx-auto">
+
+      <div class="mb-16">
+        <div class="inline-flex items-center gap-2 mb-5">
+          <span class="w-2 h-2 rounded-full bg-tertiary" aria-hidden="true"></span>
+          <span class="text-[10px] tracking-[0.25em] font-bold uppercase" style="color: rgba(212,174,94,0.8);">Lo que más nos preguntan</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black tracking-tighter text-on-surface leading-[1.1]">
+          Lo que nos preguntan vecinos<br/>y propietarios de Bellvei
+        </h2>
+      </div>
+
+      <div role="list">
+
+        <details class="faq-item" role="listitem">
+          <summary>
+            <span class="text-[11px] font-black tracking-widest w-6 flex-shrink-0" style="color: rgba(212,174,94,0.4);">01</span>
+            <span class="faq-question flex-1 font-semibold text-on-surface text-base tracking-tight transition-colors duration-200">
+              ¿Cuánto cuesta abrir una puerta en Bellvei?
+            </span>
+            <span class="material-symbols-outlined faq-chevron" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="faq-body">
+            <p class="text-on-surface-variant font-light leading-relaxed text-sm">
+              El precio varía según el tipo de cerradura y la dificultad de apertura, pero siempre lo sabrás antes de que salgamos. Damos un <strong class="text-on-surface font-semibold">presupuesto cerrado por teléfono</strong>: sin recargo por desplazamiento a Bellvei, sin coste por nocturnidad, sin añadidos finales.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item" role="listitem">
+          <summary>
+            <span class="text-[11px] font-black tracking-widest w-6 flex-shrink-0" style="color: rgba(212,174,94,0.4);">02</span>
+            <span class="faq-question flex-1 font-semibold text-on-surface text-base tracking-tight transition-colors duration-200">
+              Mi masía en Bellvei tiene una cerradura muy antigua. ¿Podéis abrirla?
+            </span>
+            <span class="material-symbols-outlined faq-chevron" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="faq-body">
+            <p class="text-on-surface-variant font-light leading-relaxed text-sm">
+              Sí. Las masías y casas rurales de Bellvei suelen tener cerraduras de palanca, serreta o cerrojo de embutir antiguo. Aplicamos técnicas de apertura no destructivas específicas para cada mecanismo. Si la cerradura está muy deteriorada y no hay solución sin daño, te lo explicamos antes de actuar y acordamos el paso siguiente contigo.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item" role="listitem">
+          <summary>
+            <span class="text-[11px] font-black tracking-widest w-6 flex-shrink-0" style="color: rgba(212,174,94,0.4);">03</span>
+            <span class="faq-question flex-1 font-semibold text-on-surface text-base tracking-tight transition-colors duration-200">
+              ¿Tardáis lo mismo en llegar a una masía aislada de Bellvei que al núcleo urbano?
+            </span>
+            <span class="material-symbols-outlined faq-chevron" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="faq-body">
+            <p class="text-on-surface-variant font-light leading-relaxed text-sm">
+              El tiempo puede variar ligeramente según la ubicación exacta dentro del término municipal. Al llamar, te damos un tiempo de llegada ajustado a tu dirección concreta. En general, el acceso por AP-7 y carreteras comarcales nos permite llegar a cualquier punto de Bellvei en 25-30 minutos.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item" role="listitem">
+          <summary>
+            <span class="text-[11px] font-black tracking-widest w-6 flex-shrink-0" style="color: rgba(212,174,94,0.4);">04</span>
+            <span class="faq-question flex-1 font-semibold text-on-surface text-base tracking-tight transition-colors duration-200">
+              ¿Instaláis cerraduras antibumping en Bellvei tras la apertura?
+            </span>
+            <span class="material-symbols-outlined faq-chevron" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="faq-body">
+            <p class="text-on-surface-variant font-light leading-relaxed text-sm">
+              Sí. Si tras la apertura decides actualizar la seguridad de tu vivienda, instalamos bombines antibumping y antiextracción homologados bajo norma UNE EN 1303 en la misma visita. Para masías y viviendas rurales recomendamos especialmente la actualización, ya que suelen tener cerrojos vulnerables que pueden sustituirse sin afectar a la carpintería existente.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item" role="listitem">
+          <summary>
+            <span class="text-[11px] font-black tracking-widest w-6 flex-shrink-0" style="color: rgba(212,174,94,0.4);">05</span>
+            <span class="faq-question flex-1 font-semibold text-on-surface text-base tracking-tight transition-colors duration-200">
+              ¿Atendéis Bellvei en Navidad, Semana Santa y festivos locales?
+            </span>
+            <span class="material-symbols-outlined faq-chevron" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="faq-body">
+            <p class="text-on-surface-variant font-light leading-relaxed text-sm">
+              Sí. Disponibles 24 horas, los 365 días del año, sin excepción. Las urgencias de cerrajería no distinguen entre festivos nacionales, locales o fines de semana — y nosotros tampoco. El precio cerrado acordado por teléfono es el mismo independientemente del día y la hora.
+            </p>
+          </div>
+        </details>
+
+      </div>
+
+      <div class="mt-16 pt-10 border-t flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
+           style="border-color: rgba(255,255,255,0.06);">
+        <p class="text-on-surface-variant font-light text-sm">¿Tienes otra duda? Te respondemos al instante.</p>
+        <a href="tel:+34627682821"
+           class="inline-flex items-center gap-2 font-bold text-sm tracking-widest uppercase cursor-pointer transition-colors duration-200 hover:opacity-80"
+           style="color: #d4ae5e;">
+          <span class="material-symbols-outlined text-base" aria-hidden="true">call</span>
+          Llamar ahora
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ─── FOOTER ────────────────────────────────────────── -->
+<footer class="w-full" style="background: linear-gradient(180deg, #0d1625 0%, #091020 100%); border-top: 1px solid rgba(212,174,94,0.15);">
+
+  <div class="px-6 md:px-24 py-10 border-b" style="border-color: rgba(255,255,255,0.06); background: rgba(212,174,94,0.04);">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div>
+        <p class="text-[10px] tracking-[0.25em] font-bold uppercase mb-1" style="color: rgba(212,174,94,0.7);">Atención inmediata · 24h · 365 días</p>
+        <p class="text-on-surface text-lg font-light">Disponibles 24h. Sin centralita. Atendemos nosotros.</p>
+      </div>
+      <a href="tel:+34627682821"
+         class="inline-flex items-center gap-3 px-8 py-4 font-black tracking-widest uppercase text-sm cursor-pointer transition-all duration-200 hover:brightness-110 flex-shrink-0"
+         style="background: rgba(212,174,94,0.12); border: 1px solid rgba(212,174,94,0.35); color: #d4ae5e;">
+        <span class="material-symbols-outlined text-base" aria-hidden="true">call</span>
+        +34 627 682 821
+      </a>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-6 md:px-24 py-16">
+
+    <div>
+      <p class="text-sm font-black tracking-[0.3em] uppercase mb-1" style="color: #d4ae5e;">KEYRON CERRAJEROS</p>
+      <p class="text-[10px] tracking-widest text-outline-variant uppercase mb-6">Cerrajería técnica · Baix Penedès</p>
+      <p class="text-on-surface-variant font-light text-sm leading-relaxed mb-6">
+        Especialistas en apertura de puertas, cambio de bombines y cerraduras antibumping en Bellvei y el Baix Penedès.
+      </p>
+      <div class="flex flex-wrap gap-x-3 gap-y-1">
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">Bellvei</span>
+        <span class="text-outline-variant/30 text-[10px]">·</span>
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">L'Arboç</span>
+        <span class="text-outline-variant/30 text-[10px]">·</span>
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">Santa Oliva</span>
+        <span class="text-outline-variant/30 text-[10px]">·</span>
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">El Vendrell</span>
+        <span class="text-outline-variant/30 text-[10px]">·</span>
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">Baix Penedès</span>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-[10px] tracking-[0.25em] font-bold uppercase mb-6" style="color: rgba(212,174,94,0.7);">Contacto</p>
+      <address class="not-italic space-y-5">
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-base flex-shrink-0" aria-hidden="true" style="color: #d4ae5e;">call</span>
+          <div>
+            <a href="tel:+34627682821"
+               class="text-on-surface font-bold text-base tracking-wide hover:text-tertiary transition-colors duration-200 cursor-pointer">
+              +34 627 682 821
+            </a>
+            <p class="text-[10px] tracking-widest text-outline-variant uppercase mt-0.5">Teléfono 24h</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-base flex-shrink-0" aria-hidden="true" style="color: #d4ae5e;">location_on</span>
+          <div>
+            <p class="text-on-surface-variant font-light text-sm">43700 El Vendrell, Tarragona</p>
+            <p class="text-[10px] tracking-widest text-outline-variant uppercase mt-0.5">Zona de operaciones</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-base flex-shrink-0" aria-hidden="true" style="color: #d4ae5e;">schedule</span>
+          <div>
+            <p class="text-on-surface-variant font-light text-sm">24 horas · 365 días</p>
+            <p class="text-[10px] tracking-widest text-outline-variant uppercase mt-0.5">Disponibles 24h · 365 días</p>
+          </div>
+        </div>
+      </address>
+    </div>
+
+    <nav aria-label="Navegación secundaria">
+      <p class="text-[10px] tracking-[0.25em] font-bold uppercase mb-6" style="color: rgba(212,174,94,0.7);">Servicios</p>
+      <ul class="flex flex-col gap-4 list-none">
+        <li>
+          <a class="text-outline-variant hover:text-on-surface transition-colors duration-200 font-light text-sm tracking-widest uppercase" href="../servicios/apertura-de-puertas.html">
+            Apertura de puertas
+          </a>
+        </li>
+        <li>
+          <a class="text-outline-variant hover:text-on-surface transition-colors duration-200 font-light text-sm tracking-widest uppercase" href="../servicios/cerraduras-antibumping.html">
+            Cerraduras antibumping
+          </a>
+        </li>
+        <li>
+          <a class="text-outline-variant hover:text-on-surface transition-colors duration-200 font-light text-sm tracking-widest uppercase" href="../servicios/cambio-de-bombines.html">
+            Cambio de bombines
+          </a>
+        </li>
+        <li>
+          <a class="text-outline-variant hover:text-on-surface transition-colors duration-200 font-light text-sm tracking-widest uppercase" href="../servicios/apertura-de-vehiculos.html">
+            Apertura de vehículos
+          </a>
+        </li>
+        <li>
+          <a class="text-outline-variant hover:text-on-surface transition-colors duration-200 font-light text-sm tracking-widest uppercase" href="../servicios/cierres-metalicos.html">
+            Cierres metálicos
+          </a>
+        </li>
+        <li>
+          <a class="text-outline-variant hover:text-tertiary transition-colors duration-200 font-light text-sm tracking-widest uppercase" href="../index.html">
+            ← Volver al inicio
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="px-6 md:px-24 py-5 flex flex-col md:flex-row items-center justify-between gap-3"
+       style="border-top: 1px solid rgba(255,255,255,0.05);">
+    <p class="text-outline-variant/50 font-light text-[10px] tracking-widest uppercase">
+      © 2024 Keyron Cerrajeros · Todos los derechos reservados
+    </p>
+    <div class="flex items-center gap-2">
+      <span class="w-1.5 h-1.5 rounded-full bg-tertiary/60 animate-pulse" aria-hidden="true"></span>
+      <p class="text-[10px] tracking-[0.2em] font-bold uppercase" style="color: rgba(212,174,94,0.5);">Sistema activo · Bellvei</p>
+    </div>
+  </div>
+
+</footer>
+
+<!-- ─── MOBILE: Sticky bottom bar ──────────────────────── -->
+<div class="fixed bottom-0 left-0 right-0 z-50 md:hidden mobile-cta-bar"
+     role="complementary" aria-label="Acceso rápido de contacto">
+  <div class="flex">
+    <a href="tel:+34627682821" class="mobile-cta-call">
+      <span class="material-symbols-outlined flex-shrink-0" aria-hidden="true"
+            style="font-size:18px;font-variation-settings:'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 20;">call</span>
+      Llamar ahora
+    </a>
+    <a href="https://wa.me/34627682821"
+       target="_blank" rel="noopener noreferrer"
+       class="mobile-cta-wa"
+       aria-label="Contactar por WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+           class="w-[18px] h-[18px] flex-shrink-0" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      WhatsApp
+    </a>
+  </div>
+</div>
+
+<!-- ─── DESKTOP: Floating pills bottom-right ───────────── -->
+<div class="hidden md:flex fixed bottom-8 right-8 z-50 flex-col gap-3 items-end"
+     role="complementary" aria-label="Acceso rápido de contacto">
+  <a href="tel:+34627682821"
+     class="fab-pill fab-pill-call"
+     aria-label="Llamar ahora: +34 627 682 821">
+    <span class="fab-icon" aria-hidden="true">
+      <span class="material-symbols-outlined" style="font-size:20px;font-variation-settings:'FILL' 1,'wght' 500,'GRAD' 0,'opsz' 20;color:#d4ae5e;">call</span>
+    </span>
+    <span class="fab-label" style="color:#d4ae5e;">Llamar ahora</span>
+  </a>
+  <a href="https://wa.me/34627682821"
+     target="_blank" rel="noopener noreferrer"
+     class="fab-pill fab-pill-wa"
+     aria-label="Contactar por WhatsApp">
+    <span class="fab-icon" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#25D366"
+           class="w-5 h-5" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </span>
+    <span class="fab-label" style="color:#25D366;">Chat WhatsApp</span>
+  </a>
+</div>
+
+<script>
+  (function () {
+    var nav      = document.getElementById('main-nav');
+    var drawer   = document.getElementById('mobile-drawer');
+    var btnHamb  = document.getElementById('btn-hamburger');
+    var iconMenu = document.getElementById('icon-menu');
+    var iconX    = document.getElementById('icon-close');
+
+    function openDrawer() {
+      drawer.classList.add('is-open');
+      drawer.setAttribute('aria-hidden', 'false');
+      btnHamb.setAttribute('aria-expanded', 'true');
+      iconMenu.classList.add('hidden');
+      iconX.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDrawer() {
+      drawer.classList.remove('is-open');
+      drawer.setAttribute('aria-hidden', 'true');
+      btnHamb.setAttribute('aria-expanded', 'false');
+      iconMenu.classList.remove('hidden');
+      iconX.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    btnHamb.addEventListener('click', function () {
+      drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
+    });
+
+    document.querySelectorAll('.drawer-link').forEach(function (link) {
+      link.addEventListener('click', closeDrawer);
+    });
+
+    window.addEventListener('scroll', function () {
+      nav.classList.toggle('is-scrolled', window.scrollY > 10);
+    }, { passive: true });
+  })();
+</script>
+
+</body>
+</html>

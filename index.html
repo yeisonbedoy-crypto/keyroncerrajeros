@@ -1,0 +1,1512 @@
+﻿<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Cerrajero urgente en El Vendrell, Calafell y Baix Penedès. Llegamos en 20 min con presupuesto cerrado. Apertura sin rotura. ☎ +34 627 682 821"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.keyroncerrajeros.es/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="es_ES"/>
+  <meta property="og:title" content="Cerrajero Urgente El Vendrell 24h · Presupuesto Cerrado | Keyron Cerrajeros"/>
+  <meta property="og:description" content="Cerrajero urgente en El Vendrell, Calafell, La Bisbal del Penedès y Baix Penedès: Cunit, Coma-ruga, L'Arboç, Bellvei y Santa Oliva. En tu puerta en 20 min. Presupuesto cerrado. Llama: +34 627 682 821"/>
+  <meta property="og:url" content="https://www.keyroncerrajeros.es/"/>
+  <meta property="og:image" content="https://www.keyroncerrajeros.es/img/og/og-image.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <!-- Geo meta (SEO local) -->
+  <meta name="geo.region" content="ES-T"/>
+  <meta name="geo.placename" content="El Vendrell, Tarragona"/>
+  <meta name="geo.position" content="41.2188;1.5356"/>
+  <meta name="ICBM" content="41.2188, 1.5356"/>
+
+  <title>Cerrajero Urgente El Vendrell 24h | Keyron Cerrajeros</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="./dist/tailwind.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+  <style>
+    /* ── Base ─────────────────────────────────────────────── */
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(160deg, #0f172a 0%, #121f38 55%, #0d1a2e 100%);
+      background-attachment: fixed;
+    }
+
+    /* Typography breathing */
+    p, li { line-height: 1.7; letter-spacing: 0.012em; }
+    .text-on-surface-variant { letter-spacing: 0.01em; }
+
+    /* Material icons */
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .material-symbols-filled {
+      font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+
+    /* ── Alloy gradient (logo/accent strip) ──────────────── */
+    .alloy-gradient {
+      background: linear-gradient(135deg, #c2ceea 0%, #1d2f46 100%);
+    }
+
+    /* ── CTA Button — luminous amber-to-orange ───────────── */
+    .cta-call {
+      background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+      box-shadow: 0 0 22px rgba(245,158,11,0.22), 0 4px 18px rgba(234,88,12,0.28);
+      transition: background 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+    }
+    .cta-call:hover {
+      background: linear-gradient(135deg, #fbbf24 0%, #f97316 100%);
+      box-shadow: 0 0 38px rgba(251,191,36,0.38), 0 6px 28px rgba(249,115,22,0.42);
+      transform: translateY(-1px);
+    }
+    .cta-call:active { transform: translateY(0); }
+
+    /* ── Depth Card (smoky glass layer) ──────────────────── */
+    .depth-card {
+      background: linear-gradient(145deg, rgba(36,55,83,0.72) 0%, rgba(29,47,70,0.62) 100%);
+      border: 1px solid rgba(100,160,210,0.10);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow:
+        inset 0 1px 0 rgba(130,170,220,0.07),
+        0 8px 36px rgba(0,0,0,0.38),
+        0 0 70px rgba(130,165,225,0.04);
+    }
+
+    /* ── Glow float (contenedores principales) ───────────── */
+    .glow-container {
+      box-shadow:
+        0 0 60px rgba(120,160,220,0.06),
+        0 0 120px rgba(100,140,200,0.035),
+        0 20px 52px rgba(0,0,0,0.42);
+    }
+
+    /* ── Steel shimmer on hover (tarjetas de servicio) ───── */
+    .card-hover {
+      transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 52px rgba(0,0,0,0.46), 0 0 44px rgba(120,160,220,0.09);
+      border-color: rgba(100,155,215,0.22) !important;
+    }
+
+    /* ── Gold accent glow (tertiary buttons/badges) ──────── */
+    .tertiary-glow { transition: box-shadow 200ms ease; }
+    .tertiary-glow:hover {
+      box-shadow: 0 0 28px rgba(233,193,118,0.30), 0 4px 16px rgba(233,193,118,0.18);
+    }
+
+    /* ── Nav: scrolled state ─────────────────────────────── */
+    #main-nav {
+      transition: background-color 250ms ease, box-shadow 250ms ease,
+                  border-bottom-color 250ms ease, backdrop-filter 250ms ease;
+      border-bottom: 1px solid transparent;
+    }
+    #main-nav.is-scrolled {
+      background-color: rgba(15,23,42,0.96);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border-bottom-color: rgba(55,90,140,0.28);
+      box-shadow: 0 1px 0 rgba(80,130,190,0.12), 0 8px 48px rgba(0,0,0,0.52);
+    }
+
+    /* ── Mobile Drawer ───────────────────────────────────── */
+    #mobile-drawer {
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+    }
+    #mobile-drawer.is-open {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* ── Status pulse — gold ─────────────────────────────── */
+    @keyframes steel-pulse {
+      0%,100% { box-shadow: 0 0 0 0 rgba(233,193,118,0.50); }
+      50%      { box-shadow: 0 0 0 7px rgba(233,193,118,0.00); }
+    }
+    .animate-pulse { animation: steel-pulse 2.2s ease-in-out infinite; }
+
+    /* ── Status pulse — red (badge vídeo cobertura) ──────── */
+    @keyframes red-pulse {
+      0%,100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.60); }
+      50%      { box-shadow: 0 0 0 5px rgba(239,68,68,0.00); }
+    }
+    .animate-pulse-red { animation: red-pulse 1.6s ease-in-out infinite; }
+
+    /* ── Global link transitions ─────────────────────────── */
+    a { transition: color 180ms ease; }
+    button, [role="button"] { transition: all 180ms ease; }
+
+    /* ── Reduce motion ───────────────────────────────────── */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ── Floating Action Buttons ─────────────────────────── */
+
+    /* Desktop: pill que se expande horizontalmente */
+    .fab-pill {
+      display: inline-flex;
+      align-items: center;
+      height: 52px;
+      width: 52px;
+      border-radius: 9999px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: width 280ms cubic-bezier(0.4, 0, 0.2, 1),
+                  box-shadow 200ms ease,
+                  opacity 200ms ease;
+      text-decoration: none;
+    }
+    .fab-pill:hover  { width: 192px; }
+    .fab-pill:focus-visible { outline: 2px solid rgba(212,174,94,0.7); outline-offset: 3px; }
+
+    .fab-pill-call {
+      background: rgba(9,16,32,0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(212,174,94,0.35);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 0 0 1px rgba(212,174,94,0.08);
+    }
+    .fab-pill-call:hover {
+      box-shadow: 0 6px 28px rgba(0,0,0,0.6), 0 0 16px rgba(212,174,94,0.12);
+      border-color: rgba(212,174,94,0.55);
+    }
+
+    .fab-pill-wa {
+      background: rgba(9,16,32,0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(37,211,102,0.3);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 0 0 1px rgba(37,211,102,0.06);
+    }
+    .fab-pill-wa:hover {
+      box-shadow: 0 6px 28px rgba(0,0,0,0.6), 0 0 16px rgba(37,211,102,0.1);
+      border-color: rgba(37,211,102,0.5);
+    }
+
+    .fab-icon {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .fab-label {
+      white-space: nowrap;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding-right: 20px;
+      opacity: 0;
+      transition: opacity 140ms ease 120ms;
+    }
+    .fab-pill:hover .fab-label { opacity: 1; }
+
+    /* Mobile sticky bar */
+    .mobile-cta-bar {
+      background: rgba(9, 16, 32, 0.97);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-top: 1px solid rgba(212,174,94,0.18);
+    }
+    .mobile-cta-call {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 0;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #d4ae5e;
+      border-right: 1px solid rgba(255,255,255,0.06);
+      transition: background 200ms ease;
+    }
+    .mobile-cta-call:hover { background: rgba(212,174,94,0.07); }
+
+    .mobile-cta-wa {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 0;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #25D366;
+      transition: background 200ms ease;
+    }
+    .mobile-cta-wa:hover { background: rgba(37,211,102,0.06); }
+
+    /* ── FAQ Accordion ───────────────────────────────────── */
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .faq-item:first-of-type { border-top: 1px solid rgba(255,255,255,0.06); }
+
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.5rem 0;
+      user-select: none;
+      outline: none;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+
+    .faq-item summary:focus-visible {
+      outline: 2px solid rgba(212,174,94,0.6);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    .faq-chevron {
+      flex-shrink: 0;
+      transition: transform 200ms ease, color 200ms ease;
+      color: rgba(212,174,94,0.5);
+    }
+    .faq-item[open] .faq-chevron {
+      transform: rotate(180deg);
+      color: #d4ae5e;
+    }
+
+    .faq-item[open] summary .faq-question {
+      color: #d4ae5e;
+    }
+
+    .faq-body {
+      padding-bottom: 1.5rem;
+      padding-left: 3rem;
+    }
+
+    .faq-item summary:hover .faq-question { color: rgba(255,255,255,0.9); }
+    .faq-item summary:hover .faq-chevron { color: #d4ae5e; }
+
+    /* ── Hero: Ambient glow blob ─────────────────────────── */
+    @keyframes hero-glow-drift {
+      0%,100% { transform: translateY(0px) scale(1.00); opacity: 0.10; }
+      50%      { transform: translateY(-20px) scale(1.06); opacity: 0.16; }
+    }
+    .hero-glow-blob {
+      animation: hero-glow-drift 10s ease-in-out infinite;
+      will-change: transform, opacity;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-glow-blob { animation: none !important; }
+    }
+
+    /* ── Hero: CTA secondary — glass ────────────────────── */
+    .cta-secondary {
+      background: rgba(9,16,32,0.55);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.10);
+      transition: background 220ms ease, border-color 220ms ease, color 220ms ease;
+    }
+    .cta-secondary:hover {
+      background: rgba(233,193,118,0.12);
+      border-color: rgba(233,193,118,0.40);
+      color: #e9c176;
+    }
+  </style>
+
+  <!-- Schema: LocalBusiness + Reviews -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Locksmith",
+    "name": "Keyron Cerrajeros — Cerrajería El Vendrell",
+    "description": "Cerrajero en El Vendrell disponible 24 horas. Apertura de puertas y vehículos, cambio de cerraduras antibumping, cerraduras de seguridad y persianas metálicas. Respuesta en menos de 20 minutos.",
+    "telephone": "+34627682821",
+    "url": "https://www.keyroncerrajeros.es",
+    "image": "https://www.keyroncerrajeros.es/img/og/og-image.png",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer de la Seguretat, S/N",
+      "addressLocality": "El Vendrell",
+      "addressRegion": "Tarragona",
+      "postalCode": "43700",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.2188,
+      "longitude": 1.5356
+    },
+    "areaServed": [
+      {"@type": "City", "name": "El Vendrell", "postalCode": "43700"},
+      {"@type": "City", "name": "Calafell", "postalCode": "43820"},
+      {"@type": "City", "name": "Segur de Calafell", "postalCode": "43882"},
+      {"@type": "City", "name": "Cunit", "postalCode": "43881"},
+      {"@type": "City", "name": "Coma-ruga", "postalCode": "43880"},
+      {"@type": "City", "name": "L'Arboç", "postalCode": "43720"},
+      {"@type": "City", "name": "Bellvei", "postalCode": "43719"},
+      {"@type": "City", "name": "Santa Oliva", "postalCode": "43710"},
+      {"@type": "City", "name": "La Bisbal del Penedès", "postalCode": "43717"}
+    ],
+    "openingHours": "Mo-Su 00:00-24:00",
+    "knowsAbout": [
+      "Apertura de puertas sin rotura",
+      "Cambio de bombines de alta seguridad",
+      "Cilindros europeos antibumping",
+      "Escudos protectores para puertas",
+      "Llaves incopiables de registro",
+      "Apertura técnica de vehículos",
+      "Cerrojos suplementarios de seguridad",
+      "Persianas metálicas comerciales",
+      "Intervención urgente de cerrajería",
+      "Cerraduras de alta seguridad UNE EN 1303"
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tarda en llegar un cerrajero en El Vendrell?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Garantizamos una respuesta inferior a 20 minutos en todo el núcleo de El Vendrell y urbanizaciones cercanas. Tenemos técnicos posicionados en la zona de forma permanente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dáis presupuesto antes de ir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Proporcionamos un presupuesto cerrado por teléfono antes de desplazarnos. El precio acordado es el precio final, sin cargos extra ni sorpresas de última hora."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Podéis abrir mi puerta sin romperla?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En la gran mayoría de casos sí. Aplicamos técnicas de apertura no destructiva adaptadas al tipo de cerradura. Solo en casos extremos —cerrojo corrido por dentro, puerta atrancada— puede ser necesaria una intervención parcial, siempre comunicada y presupuestada antes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tenéis garantía en los trabajos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Todos nuestros trabajos y materiales cuentan con garantía oficial por escrito. Somos técnicos homologados y cumplimos con la normativa española de seguridad vigente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cubrís El Vendrell, Calafell, Cunit y otros municipios del Baix Penedès?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Damos servicio a todos los municipios de nuestra zona de cobertura: El Vendrell, Coma-ruga, Calafell, Segur de Calafell, Cunit, L'Arboç, Bellvei, Santa Oliva y La Bisbal del Penedès. Llámanos y confirmamos el tiempo de llegada a tu dirección exacta."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- nav scroll styles consolidated in head <style> block above -->
+</head>
+
+<body class="bg-background text-on-surface selection:bg-tertiary selection:text-on-tertiary pb-16 md:pb-0">
+
+<!-- ─── HEADER / NAV ─────────────────────────────────── -->
+<header>
+  <nav id="main-nav" class="fixed top-0 w-full z-50 bg-background/50 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 py-2" aria-label="Navegación principal">
+
+    <!-- ── Logo ── -->
+    <a href="#" aria-label="El Vendrell 24H Seguridad Técnica — Inicio">
+      <img
+        src="img/logo/Gemini_Generated_Image_z8mq9nz8mq9nz8mq.svg"
+        alt="El Vendrell 24H — Cerrajería de Seguridad"
+        class="h-24 w-auto"
+      />
+    </a>
+
+    <!-- ── Links de navegación (Desktop) ── -->
+    <ul class="hidden md:flex items-center gap-10 list-none">
+      <li>
+        <a class="text-tertiary tracking-widest font-semibold uppercase text-[11px] transition-colors duration-300" href="#servicios">Servicios</a>
+      </li>
+      <li>
+        <a class="text-on-surface-variant hover:text-tertiary tracking-widest font-medium uppercase text-[11px] transition-colors duration-300" href="#emergencias">Urgencias</a>
+      </li>
+      <li>
+        <a class="text-on-surface-variant hover:text-tertiary tracking-widest font-medium uppercase text-[11px] transition-colors duration-300" href="#cobertura">Cobertura</a>
+      </li>
+      <li>
+        <a class="text-on-surface-variant hover:text-tertiary tracking-widest font-medium uppercase text-[11px] transition-colors duration-300" href="#faq">FAQ</a>
+      </li>
+      <li>
+        <a class="text-on-surface-variant hover:text-tertiary tracking-widest font-medium uppercase text-[11px] transition-colors duration-300" href="quienes-somos.html">Quiénes somos</a>
+      </li>
+    </ul>
+
+    <!-- ── CTA Urgencias (solo desktop) ── -->
+    <a href="tel:+34627682821" class="hidden md:inline-flex bg-tertiary text-background px-6 py-2.5 font-black text-[11px] tracking-widest uppercase hover:bg-[#d4ae5e] transition-colors duration-300 items-center gap-2 flex-shrink-0">
+      <span class="material-symbols-outlined flex-shrink-0" aria-hidden="true" style="font-size:15px;font-variation-settings:'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 20;">call</span>
+      URGENCIAS 24H
+    </a>
+
+    <!-- ── Botón Hamburguesa (solo móvil) ── -->
+    <button id="btn-hamburger" class="md:hidden flex items-center justify-center w-10 h-10 text-on-surface hover:text-tertiary transition-colors duration-300 flex-shrink-0" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">
+      <span id="icon-menu" class="material-symbols-outlined" style="font-size:26px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;">menu</span>
+      <span id="icon-close" class="material-symbols-outlined hidden" style="font-size:26px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;">close</span>
+    </button>
+
+  </nav>
+
+  <!-- ── Mobile Drawer ── -->
+  <div id="mobile-drawer" class="fixed inset-0 z-40 flex flex-col md:hidden" aria-hidden="true" style="background: rgba(15,23,42,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
+    <!-- Espacio para la barra de nav -->
+    <div class="h-[88px] flex-shrink-0"></div>
+    <!-- Separador superior -->
+    <div class="w-full h-px" style="background: rgba(55,90,140,0.28);"></div>
+
+    <!-- Links -->
+    <nav class="flex-1 flex flex-col justify-center items-center gap-7 px-8 py-10" aria-label="Menú móvil">
+      <a href="#servicios" class="drawer-link group flex items-center gap-4 text-on-surface hover:text-tertiary tracking-widest font-medium uppercase text-sm transition-colors duration-300">
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors duration-300" style="font-size:18px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 20;">lock</span>
+        Servicios
+      </a>
+      <a href="#emergencias" class="drawer-link group flex items-center gap-4 text-on-surface hover:text-tertiary tracking-widest font-medium uppercase text-sm transition-colors duration-300">
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors duration-300" style="font-size:18px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 20;">emergency</span>
+        Urgencias
+      </a>
+      <a href="#cobertura" class="drawer-link group flex items-center gap-4 text-on-surface hover:text-tertiary tracking-widest font-medium uppercase text-sm transition-colors duration-300">
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors duration-300" style="font-size:18px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 20;">map</span>
+        Cobertura
+      </a>
+      <a href="#faq" class="drawer-link group flex items-center gap-4 text-on-surface hover:text-tertiary tracking-widest font-medium uppercase text-sm transition-colors duration-300">
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors duration-300" style="font-size:18px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 20;">help_outline</span>
+        FAQ
+      </a>
+      <a href="quienes-somos.html" class="drawer-link group flex items-center gap-4 text-on-surface hover:text-tertiary tracking-widest font-medium uppercase text-sm transition-colors duration-300">
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors duration-300" style="font-size:18px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 20;">group</span>
+        Quiénes somos
+      </a>
+
+      <!-- Divisor -->
+      <div class="w-10 h-px my-2" style="background: rgba(233,193,118,0.25);"></div>
+
+      <!-- CTA Teléfono -->
+      <a href="tel:+34627682821" class="drawer-link inline-flex items-center gap-3 px-8 py-4 font-black text-sm tracking-widest uppercase transition-all duration-300" style="background: rgba(233,193,118,0.08); border: 1px solid rgba(233,193,118,0.28); color: #e9c176;">
+        <span class="material-symbols-outlined" style="font-size:20px;font-variation-settings:'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 20;color:#e9c176;">call</span>
+        627 682 821
+      </a>
+    </nav>
+
+    <!-- Padding inferior para la mobile-cta-bar -->
+    <div class="h-20 flex-shrink-0"></div>
+  </div>
+</header>
+
+<!-- ─── MAIN CONTENT ─────────────────────────────────── -->
+<main class="pt-20">
+
+  <!-- ── Hero ──────────────────────────────────────────── -->
+  <section id="inicio" class="relative h-[620px] md:h-[921px] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <video
+        class="w-full h-full object-cover object-[70%_center] md:object-center grayscale-[0.5]"
+        src="img/head/furgoneta.webm"
+        autoplay
+        muted
+        loop
+        playsinline
+        aria-hidden="true"
+      ></video>
+      <!-- Capa 1: Gradiente principal izq → der -->
+      <div class="absolute inset-0 bg-gradient-to-r from-background via-background/88 md:via-background/50 to-background/25 md:to-transparent" aria-hidden="true"></div>
+      <!-- Capa 2: Vignette superior (borde superior oscuro) -->
+      <div class="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-background/55 to-transparent" aria-hidden="true"></div>
+      <!-- Capa 3: Vignette inferior (transición al siguiente bloque) -->
+      <div class="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-background to-transparent" aria-hidden="true"></div>
+      <!-- Capa 4: Blob de luz ambiental dorada (detrás del texto) -->
+      <div class="hero-glow-blob absolute pointer-events-none rounded-full"
+           style="left:-10%; top:8%; width:640px; height:640px; background: radial-gradient(circle, rgba(233,193,118,0.13) 0%, rgba(233,193,118,0.05) 45%, transparent 68%);"
+           aria-hidden="true"></div>
+      <!-- Capa 5: Textura de grano cinematográfico -->
+      <div class="absolute inset-0 pointer-events-none"
+           style="opacity:0.04; background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E\");"
+           aria-hidden="true"></div>
+    </div>
+    <div class="relative z-10 px-6 md:px-24 max-w-5xl">
+      <div class="mb-6 inline-flex items-center gap-2 px-4 py-1.5 border border-outline-variant/25"
+           style="background: rgba(9,16,32,0.72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);">
+        <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse" aria-hidden="true"></span>
+        <span class="text-[10px] tracking-[0.2em] font-bold text-on-surface-variant uppercase">Servicio activo · El Vendrell y comarca</span>
+      </div>
+      <h1 class="text-4xl md:text-7xl font-bold tracking-tighter text-on-surface mb-6 leading-[1.1]">
+        Cerrajero Urgente en El Vendrell 24h —<br/>Especialistas en Seguridad Técnica.
+      </h1>
+      <p class="text-xl md:text-2xl text-on-surface-variant mb-10 max-w-2xl font-light leading-relaxed">
+        Presupuesto cerrado antes de salir. Sin intermediarios. Técnicos homologados disponibles las 24 horas, todos los días del año.
+      </p>
+      <div class="flex flex-col md:flex-row gap-6 mb-8">
+        <a href="tel:+34627682821" class="cta-call text-white px-10 py-5 font-bold tracking-widest uppercase text-sm hover:scale-[0.98] transition-all text-center inline-flex items-center justify-center gap-3">
+          <span class="material-symbols-outlined text-base" aria-hidden="true">call</span>
+          Llamar ahora — Atención inmediata
+        </a>
+        <a href="#servicios" class="cta-secondary text-on-surface px-10 py-5 font-bold tracking-widest uppercase text-sm text-center">
+          Ver servicios
+        </a>
+      </div>
+      <!-- Rating badge — glass container -->
+      <div class="inline-flex items-center gap-3 px-4 py-2 border border-outline-variant/20"
+           style="background: rgba(9,16,32,0.58); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+        <div class="flex text-tertiary" aria-label="Valoración 4,9 sobre 5 en Google">
+          <span class="material-symbols-outlined material-symbols-filled text-base" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled text-base" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled text-base" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled text-base" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled text-base" aria-hidden="true">star</span>
+        </div>
+        <span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">4,9 / 5 en Google</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Trust Bar ─────────────────────────────────────── -->
+  <section aria-label="Garantías del servicio" class="bg-surface-container-lowest py-12 px-6 md:px-24">
+    <ul class="grid grid-cols-1 md:grid-cols-4 gap-8 md:divide-x divide-outline-variant/20 list-none">
+      <li class="flex items-center gap-4 px-8 justify-center">
+        <span class="material-symbols-outlined text-tertiary text-3xl" aria-hidden="true">timer</span>
+        <div>
+          <p class="text-xs tracking-widest font-black uppercase text-primary">&lt; 20 minutos</p>
+          <p class="text-[10px] tracking-widest text-on-surface-variant uppercase mt-0.5">Tiempo de respuesta</p>
+        </div>
+      </li>
+      <li class="flex items-center gap-4 px-8 justify-center">
+        <span class="material-symbols-outlined text-tertiary text-3xl" aria-hidden="true">verified_user</span>
+        <div>
+          <p class="text-xs tracking-widest font-black uppercase text-primary">Precio cerrado</p>
+          <p class="text-[10px] tracking-widest text-on-surface-variant uppercase mt-0.5">Acordado por teléfono</p>
+        </div>
+      </li>
+      <li class="flex items-center gap-4 px-8 justify-center">
+        <span class="material-symbols-outlined text-tertiary text-3xl" aria-hidden="true">contract</span>
+        <div>
+          <p class="text-xs tracking-widest font-black uppercase text-primary">Garantía por escrito</p>
+          <p class="text-[10px] tracking-widest text-on-surface-variant uppercase mt-0.5">En trabajos y materiales</p>
+        </div>
+      </li>
+      <li class="flex items-center gap-4 px-8 justify-center">
+        <span class="material-symbols-outlined text-tertiary text-3xl" aria-hidden="true">engineering</span>
+        <div>
+          <p class="text-xs tracking-widest font-black uppercase text-primary">Técnicos homologados</p>
+          <p class="text-[10px] tracking-widest text-on-surface-variant uppercase mt-0.5">Normativa española vigente</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ── Servicios ─────────────────────────────────────── -->
+  <section id="servicios" class="py-32 px-6 md:px-24 bg-surface">
+    <div class="mb-24 max-w-3xl">
+      <p class="text-sm tracking-[0.3em] font-bold text-tertiary uppercase mb-4">Especialidades</p>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-on-surface">Servicios de apertura de puertas sin rotura y cerraduras antibumping en El Vendrell y comarca.</h2>
+    </div>
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 list-none" style="gap: 1px; background: rgba(100,130,180,0.1);">
+
+      <!-- 01 — Apertura de puertas · acento: Oro #d4ae5e -->
+      <li class="group relative overflow-hidden p-10 flex flex-col cursor-pointer"
+          style="background: linear-gradient(150deg, #1e2f44 0%, #152035 100%); transition: background 300ms ease, box-shadow 300ms ease;">
+        <a href="servicios/apertura-de-puertas.html" class="absolute inset-0 z-10" aria-label="Ver servicio: Apertura técnica de puertas sin rotura"></a>
+        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
+             style="background: linear-gradient(135deg, rgba(212,174,94,0.07) 0%, transparent 55%);"></div>
+        <div class="absolute top-0 left-0 h-[2px] w-0 group-hover:w-full transition-all duration-500 ease-out"
+             style="background: linear-gradient(90deg, #d4ae5e, rgba(212,174,94,0));"></div>
+
+        <p class="text-[9px] tracking-[0.4em] font-black uppercase mb-8 relative" style="color: rgba(212,174,94,0.35);">01 / 05</p>
+
+        <div class="w-10 h-10 flex items-center justify-center mb-8 relative flex-shrink-0"
+             style="border: 1px solid rgba(212,174,94,0.22); background: rgba(212,174,94,0.07);">
+          <span class="material-symbols-outlined text-xl" aria-hidden="true"
+                style="color: #d4ae5e; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">sensor_door</span>
+        </div>
+
+        <h3 class="text-base font-bold tracking-tight text-on-surface mb-3 leading-snug relative">Apertura técnica de puertas sin rotura</h3>
+        <p class="text-[13px] text-on-surface-variant leading-relaxed relative flex-1">Apertura no destructiva para todo tipo de cerraduras: convencionales, cilindro europeo, alta seguridad y cerrojo. Técnica de intervención urgente sin dañar la puerta ni el marco.</p>
+
+        <div class="mt-8 flex items-center gap-2 relative">
+          <div class="h-px flex-1" style="background: rgba(212,174,94,0.14);"></div>
+          <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                style="color: rgba(212,174,94,0.55); font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">arrow_forward</span>
+        </div>
+      </li>
+
+      <!-- 02 — Cambio de bombines · acento: Acero azul #6ea8d4 -->
+      <li class="group relative overflow-hidden p-10 flex flex-col cursor-pointer"
+          style="background: linear-gradient(150deg, #1a2e48 0%, #122238 100%); transition: background 300ms ease, box-shadow 300ms ease;">
+        <a href="servicios/cambio-de-bombines.html" class="absolute inset-0 z-10" aria-label="Ver servicio: Cambio de bombines de alta seguridad"></a>
+        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
+             style="background: linear-gradient(135deg, rgba(110,168,212,0.07) 0%, transparent 55%);"></div>
+        <div class="absolute top-0 left-0 h-[2px] w-0 group-hover:w-full transition-all duration-500 ease-out"
+             style="background: linear-gradient(90deg, #6ea8d4, rgba(110,168,212,0));"></div>
+
+        <p class="text-[9px] tracking-[0.4em] font-black uppercase mb-8 relative" style="color: rgba(110,168,212,0.4);">02 / 05</p>
+
+        <div class="w-10 h-10 flex items-center justify-center mb-8 relative flex-shrink-0"
+             style="border: 1px solid rgba(110,168,212,0.22); background: rgba(110,168,212,0.07);">
+          <span class="material-symbols-outlined text-xl" aria-hidden="true"
+                style="color: #6ea8d4; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">key</span>
+        </div>
+
+        <h3 class="text-base font-bold tracking-tight text-on-surface mb-3 leading-snug relative">Cambio de bombines de alta seguridad</h3>
+        <p class="text-[13px] text-on-surface-variant leading-relaxed relative flex-1">Sustitución del cilindro europeo por sistemas antibumping, antitaladro y multibloqueo. Llaves incopiables de registro. Marcas certificadas: FAC, Tesa, ISEO, Keso.</p>
+
+        <div class="mt-8 flex items-center gap-2 relative">
+          <div class="h-px flex-1" style="background: rgba(110,168,212,0.14);"></div>
+          <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                style="color: rgba(110,168,212,0.55); font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">arrow_forward</span>
+        </div>
+      </li>
+
+      <!-- 03 — Cerraduras antibumping · acento: Pervinca #8899cc -->
+      <li class="group relative overflow-hidden p-10 flex flex-col cursor-pointer"
+          style="background: linear-gradient(150deg, #1c2c48 0%, #131e3c 100%); transition: background 300ms ease, box-shadow 300ms ease;">
+        <a href="servicios/cerraduras-antibumping.html" class="absolute inset-0 z-10" aria-label="Ver servicio: Expertos en cerraduras antibumping en el Baix Penedès"></a>
+        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
+             style="background: linear-gradient(135deg, rgba(136,153,204,0.07) 0%, transparent 55%);"></div>
+        <div class="absolute top-0 left-0 h-[2px] w-0 group-hover:w-full transition-all duration-500 ease-out"
+             style="background: linear-gradient(90deg, #8899cc, rgba(136,153,204,0));"></div>
+
+        <p class="text-[9px] tracking-[0.4em] font-black uppercase mb-8 relative" style="color: rgba(136,153,204,0.4);">03 / 05</p>
+
+        <div class="w-10 h-10 flex items-center justify-center mb-8 relative flex-shrink-0"
+             style="border: 1px solid rgba(136,153,204,0.22); background: rgba(136,153,204,0.07);">
+          <span class="material-symbols-outlined text-xl" aria-hidden="true"
+                style="color: #8899cc; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">security</span>
+        </div>
+
+        <h3 class="text-base font-bold tracking-tight text-on-surface mb-3 leading-snug relative">Expertos en cerraduras antibumping en el Baix Penedès</h3>
+        <p class="text-[13px] text-on-surface-variant leading-relaxed relative flex-1">Instalación de cerrojos suplementarios, escudos protectores y blindajes perimetrales certificados. Cilindros europeos de alta seguridad según normativa UNE EN 1303.</p>
+
+        <div class="mt-8 flex items-center gap-2 relative">
+          <div class="h-px flex-1" style="background: rgba(136,153,204,0.14);"></div>
+          <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                style="color: rgba(136,153,204,0.55); font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">arrow_forward</span>
+        </div>
+      </li>
+
+      <!-- 04 — Cierres metálicos · acento: Cobre #c8855a -->
+      <li class="group relative overflow-hidden p-10 flex flex-col cursor-pointer"
+          style="background: linear-gradient(150deg, #1f2c40 0%, #161d32 100%); transition: background 300ms ease, box-shadow 300ms ease;">
+        <a href="servicios/cierres-metalicos.html" class="absolute inset-0 z-10" aria-label="Ver servicio: Reparación urgente de cierres metálicos"></a>
+        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
+             style="background: linear-gradient(135deg, rgba(200,133,90,0.07) 0%, transparent 55%);"></div>
+        <div class="absolute top-0 left-0 h-[2px] w-0 group-hover:w-full transition-all duration-500 ease-out"
+             style="background: linear-gradient(90deg, #c8855a, rgba(200,133,90,0));"></div>
+
+        <p class="text-[9px] tracking-[0.4em] font-black uppercase mb-8 relative" style="color: rgba(200,133,90,0.4);">04 / 05</p>
+
+        <div class="w-10 h-10 flex items-center justify-center mb-8 relative flex-shrink-0"
+             style="border: 1px solid rgba(200,133,90,0.22); background: rgba(200,133,90,0.07);">
+          <span class="material-symbols-outlined text-xl" aria-hidden="true"
+                style="color: #c8855a; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">storefront</span>
+        </div>
+
+        <h3 class="text-base font-bold tracking-tight text-on-surface mb-3 leading-snug relative">Reparación urgente de cierres metálicos</h3>
+        <p class="text-[13px] text-on-surface-variant leading-relaxed relative flex-1">Reparación y motorización de persianas metálicas enrollables para tiendas, almacenes y locales en el Baix Penedès. Intervención urgente 24h sin pérdida de actividad.</p>
+
+        <div class="mt-8 flex items-center gap-2 relative">
+          <div class="h-px flex-1" style="background: rgba(200,133,90,0.14);"></div>
+          <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                style="color: rgba(200,133,90,0.55); font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">arrow_forward</span>
+        </div>
+      </li>
+
+      <!-- 05 — Vehículos · acento: Salvia #7ab89a -->
+      <li class="group relative overflow-hidden p-10 flex flex-col"
+          style="background: linear-gradient(150deg, #1a2e40 0%, #122434 100%); transition: background 300ms ease, box-shadow 300ms ease;">
+        <a href="servicios/apertura-de-vehiculos.html" class="absolute inset-0 z-10" aria-label="Ver servicio de apertura de vehículos"></a>
+        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none"
+             style="background: linear-gradient(135deg, rgba(122,184,154,0.07) 0%, transparent 55%);"></div>
+        <div class="absolute top-0 left-0 h-[2px] w-0 group-hover:w-full transition-all duration-500 ease-out"
+             style="background: linear-gradient(90deg, #7ab89a, rgba(122,184,154,0));"></div>
+
+        <p class="text-[9px] tracking-[0.4em] font-black uppercase mb-8 relative" style="color: rgba(122,184,154,0.4);">05 / 05</p>
+
+        <div class="w-10 h-10 flex items-center justify-center mb-8 relative flex-shrink-0"
+             style="border: 1px solid rgba(122,184,154,0.22); background: rgba(122,184,154,0.07);">
+          <span class="material-symbols-outlined text-xl" aria-hidden="true"
+                style="color: #7ab89a; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">directions_car</span>
+        </div>
+
+        <h3 class="text-base font-bold tracking-tight text-on-surface mb-3 leading-snug relative">Apertura técnica de vehículos</h3>
+        <p class="text-[13px] text-on-surface-variant leading-relaxed relative flex-1">Intervención urgente no destructiva garantizada: abrimos tu coche, furgoneta o camión sin arañar el marco ni la pintura. Recuperamos llaves incopiables olvidadas en el interior. Todas las marcas y modelos. Servicio inmediato en El Vendrell, Calafell, Cunit y Baix Penedès, 24h.</p>
+
+        <div class="mt-8 flex items-center gap-2 relative">
+          <div class="h-px flex-1" style="background: rgba(122,184,154,0.14);"></div>
+          <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                style="color: rgba(122,184,154,0.55); font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 20;">arrow_forward</span>
+        </div>
+      </li>
+/
+    </ul>
+  </section>
+
+  <!-- ── Emergencias ───────────────────────────────────── -->
+  <section id="emergencias" class="overflow-hidden py-16 md:py-24" style="background: linear-gradient(160deg, rgba(15,23,42,0) 0%, rgba(12,19,36,0.6) 100%);">
+    <div class="max-w-screen-2xl mx-auto px-6 md:px-10 lg:px-16">
+
+      <!-- Grid horizontal: contenido izquierda / mapa derecha -->
+      <div class="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-10 lg:gap-12 items-center">
+
+        <!-- ── Columna izquierda: Contenido ── -->
+        <div class="flex flex-col">
+
+          <!-- Eyebrow -->
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="w-2 h-2 rounded-full bg-tertiary animate-pulse flex-shrink-0" aria-hidden="true"></span>
+            <span class="text-[10px] tracking-[0.22em] font-bold text-tertiary uppercase">Cobertura activa · Baix Penedès</span>
+          </div>
+
+          <!-- Titular -->
+          <h2 class="text-3xl md:text-4xl xl:text-5xl font-black tracking-tighter text-on-surface mb-5 leading-[1.05]">
+            Cerrajería 24 horas en El Vendrell y Calafell —<br class="hidden sm:block"/>Apertura de puertas sin rotura
+          </h2>
+
+          <!-- Cuerpo -->
+          <p class="text-on-surface-variant text-base mb-3 font-light" style="line-height:1.7;">
+            Flota permanente posicionada en el Baix Penedès. Atendemos El Vendrell, Calafell, Segur de Calafell, Cunit, Coma-ruga, L'Arboç, Bellvei y Santa Oliva en <strong class="text-on-surface font-semibold">menos de 20 minutos</strong>. Cerrojo echado, bombín bloqueado o cilindro europeo forzado: llegamos y lo resolvemos.
+          </p>
+          <p class="text-on-surface-variant text-sm mb-8 font-light" style="line-height:1.7;">
+            Madrugadas y fines de semana: mismo precio, misma rapidez. Presupuesto cerrado antes de la intervención urgente.
+          </p>
+
+          <!-- Trust metrics -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4 gap-3 mb-10">
+            <div class="depth-card p-3 text-center">
+              <p class="text-xl font-black tracking-tight" style="color:#e9c176;">&lt; 20'</p>
+              <p class="text-[9px] tracking-widest uppercase text-on-surface-variant font-semibold mt-0.5">Respuesta</p>
+            </div>
+            <div class="depth-card p-3 text-center">
+              <p class="text-xl font-black tracking-tight" style="color:#e9c176;">24 h</p>
+              <p class="text-[9px] tracking-widest uppercase text-on-surface-variant font-semibold mt-0.5">365 días</p>
+            </div>
+            <div class="depth-card p-3 text-center">
+              <p class="text-xl font-black tracking-tight" style="color:#e9c176;">0 €</p>
+              <p class="text-[9px] tracking-widest uppercase text-on-surface-variant font-semibold mt-0.5">Sorpresas</p>
+            </div>
+            <div class="depth-card p-3 text-center">
+              <p class="text-xl font-black tracking-tight" style="color:#e9c176;">4.9 ★</p>
+              <p class="text-[9px] tracking-widest uppercase text-on-surface-variant font-semibold mt-0.5">Google</p>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div>
+            <a href="tel:+34627682821"
+               class="cta-call text-white px-10 py-5 font-bold tracking-widest uppercase text-sm inline-flex items-center gap-3">
+              <span class="material-symbols-outlined text-base" aria-hidden="true">call</span>
+              Llamar ahora — Atención inmediata
+            </a>
+          </div>
+        </div>
+
+        <!-- ── Columna derecha: Mapa de cobertura ── -->
+        <div class="relative">
+
+          <!-- Glow ambiental detrás del mapa -->
+          <div class="absolute -inset-6 -z-10 rounded-3xl blur-3xl opacity-25 pointer-events-none"
+               style="background: radial-gradient(ellipse at center, rgba(194,206,234,0.5) 0%, transparent 70%);" aria-hidden="true"></div>
+
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl"
+               style="border: 1px solid rgba(255,255,255,0.09); box-shadow: 0 24px 64px rgba(0,0,0,0.55), inset 0 1px 0 rgba(180,210,255,0.06);">
+            <img
+              class="w-full h-auto block"
+              src="img/mapa-urgencias/imagen-cobertura.webp"
+              alt="Mapa de cobertura de Keyron Cerrajeros en el Baix Penedès — El Vendrell, Calafell, Cunit y comarca"
+              loading="lazy"
+            />
+
+            <!-- Badge flotante "Unidades en vivo" -->
+            <div class="absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 px-2 py-1 md:gap-2 md:px-3 md:py-1.5"
+                 style="background: rgba(9,16,32,0.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,80,80,0.35);">
+              <span class="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-red-500 animate-pulse-red flex-shrink-0" aria-hidden="true"></span>
+              <span class="text-[8px] md:text-[9px] font-black tracking-[0.22em] uppercase text-white">Unidades en vivo</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Zona de cobertura ─────────────────────────────── -->
+  <section id="cobertura" class="bg-surface-container py-20 px-4 md:px-24">
+
+    <!-- Cabecera de sección -->
+    <div class="mb-12 max-w-2xl">
+      <p class="text-sm tracking-[0.3em] font-bold text-tertiary uppercase mb-4">Cobertura</p>
+      <h2 class="text-3xl font-bold tracking-tight text-on-surface mb-4">Cerrajería 24 horas en Calafell, Cunit y el Baix Penedès</h2>
+      <p class="text-sm text-on-surface-variant font-light leading-relaxed">Cerrajero urgente en El Vendrell y todos los municipios de la comarca: Calafell, Segur de Calafell, Cunit, Coma-ruga, L'Arboç, Bellvei, Santa Oliva y La Bisbal del Penedès. Confirmamos tiempo de llegada antes de desplazarnos.</p>
+    </div>
+
+    <!-- Grid de tarjetas de localidades -->
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none">
+
+      <!-- ── El Vendrell (núcleo principal) ── -->
+      <li class="group relative rounded-xl overflow-hidden border border-outline-variant/20 shadow-lg bg-surface-container-low transition-all duration-300 hover:-translate-y-1 hover:border-tertiary/40 hover:shadow-xl">
+        <a href="zonas/el-vendrell.html" class="absolute inset-0 z-10" aria-label="Cerrajero urgente en El Vendrell"></a>
+        <div class="relative aspect-video overflow-hidden"
+             style="background-color: var(--md-sys-color-surface-container-highest, #2a2a2a); background-image: linear-gradient(rgba(233,193,118,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(233,193,118,0.06) 1px, transparent 1px); background-size: 24px 24px;">
+          <img
+            src="img/cobertura/el-vendrell.webp"
+            alt="El Vendrell — zona de cobertura Keyron Cerrajeros"
+            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            loading="lazy"
+            width="640" height="360"
+            onerror="this.style.display='none'"/>
+          <!-- Badge núcleo principal -->
+          <span class="absolute top-3 left-3 text-[9px] font-black tracking-[0.2em] uppercase px-2 py-1"
+                style="background:rgba(233,193,118,0.92); color:#0c0a09; letter-spacing:0.18em;">núcleo principal</span>
+        </div>
+        <div class="px-4 py-3">
+          <p class="text-xs font-black tracking-widest uppercase text-on-surface">El Vendrell</p>
+          <p class="text-[10px] tracking-widest uppercase mt-0.5 font-medium" style="color:#e9c176;">43700</p>
+        </div>
+      </li>
+
+      <!-- ── Calafell ── -->
+      <li class="group relative rounded-xl overflow-hidden border border-outline-variant/20 shadow-lg bg-surface-container-low transition-all duration-300 hover:-translate-y-1 hover:border-tertiary/40 hover:shadow-xl">
+        <a href="zonas/calafell.html" class="absolute inset-0 z-10" aria-label="Cerrajero urgente en Calafell"></a>
+        <div class="relative aspect-video overflow-hidden"
+             style="background-color: var(--md-sys-color-surface-container-highest, #2a2a2a); background-image: linear-gradient(rgba(233,193,118,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(233,193,118,0.06) 1px, transparent 1px); background-size: 24px 24px;">
+          <img
+            src="img/cobertura/calafel.webp"
+            alt="Calafell — zona de cobertura Keyron Cerrajeros"
+            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            loading="lazy"
+            width="640" height="360"
+            onerror="this.style.display='none'"/>
+          <!-- Badge núcleo principal -->
+          <span class="absolute top-3 left-3 text-[9px] font-black tracking-[0.2em] uppercase px-2 py-1"
+                style="background:rgba(233,193,118,0.92); color:#0c0a09; letter-spacing:0.18em;">núcleo principal</span>
+        </div>
+        <div class="px-4 py-3">
+          <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant">Calafell</p>
+          <p class="text-[10px] tracking-widest uppercase mt-0.5" style="color:#e9c176;">43820</p>
+        </div>
+      </li>
+
+      <!-- ── Segur de Calafell ── -->
+      <li class="group relative rounded-xl overflow-hidden border border-outline-variant/20 shadow-lg bg-surface-container-low transition-all duration-300 hover:-translate-y-1 hover:border-tertiary/40 hover:shadow-xl">
+        <a href="zonas/segur-de-calafell.html" class="absolute inset-0 z-10" aria-label="Cerrajero urgente en Segur de Calafell"></a>
+        <div class="relative aspect-video overflow-hidden"
+             style="background-color: var(--md-sys-color-surface-container-highest, #2a2a2a); background-image: linear-gradient(rgba(233,193,118,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(233,193,118,0.06) 1px, transparent 1px); background-size: 24px 24px;">
+          <img
+            src="img/cobertura/segur-calafel.webp"
+            alt="Segur de Calafell — zona de cobertura Keyron Cerrajeros"
+            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            loading="lazy"
+            width="640" height="360"
+            onerror="this.style.display='none'"/>
+        </div>
+        <div class="px-4 py-3">
+          <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant">Segur de Calafell</p>
+          <p class="text-[10px] tracking-widest uppercase mt-0.5" style="color:#e9c176;">43882</p>
+        </div>
+      </li>
+
+      <!-- ── Cunit ── -->
+      <li class="group relative rounded-xl overflow-hidden border border-outline-variant/20 shadow-lg bg-surface-container-low transition-all duration-300 hover:-translate-y-1 hover:border-tertiary/40 hover:shadow-xl">
+        <a href="zonas/cunit.html" class="absolute inset-0 z-10" aria-label="Cerrajero urgente en Cunit"></a>
+        <div class="relative aspect-video overflow-hidden"
+             style="background-color: var(--md-sys-color-surface-container-highest, #2a2a2a); background-image: linear-gradient(rgba(233,193,118,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(233,193,118,0.06) 1px, transparent 1px); background-size: 24px 24px;">
+          <img
+            src="img/cobertura/cunit.webp"
+            alt="Cunit — zona de cobertura Keyron Cerrajeros"
+            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            loading="lazy"
+            width="640" height="360"
+            onerror="this.style.display='none'"/>
+        </div>
+        <div class="px-4 py-3">
+          <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant">Cunit</p>
+          <p class="text-[10px] tracking-widest uppercase mt-0.5" style="color:#e9c176;">43881</p>
+        </div>
+      </li>
+
+      <!-- ── Coma-ruga ── -->
+      <li class="group relative rounded-xl overflow-hidden border border-outline-variant/20 shadow-lg bg-surface-container-low transition-all duration-300 hover:-translate-y-1 hover:border-tertiary/40 hover:shadow-xl">
+        <a href="zonas/coma-ruga.html" class="absolute inset-0 z-10" aria-label="Cerrajero urgente en Coma-ruga"></a>
+        <div class="relative aspect-video overflow-hidden"
+             style="background-color: var(--md-sys-color-surface-container-highest, #2a2a2a); background-image: linear-gradient(rgba(233,193,118,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(233,193,118,0.06) 1px, transparent 1px); background-size: 24px 24px;">
+          <img
+            src="img/cobertura/coma-ruga.webp"
+            alt="Coma-ruga — zona de cobertura Keyron Cerrajeros"
+            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            loading="lazy"
+            width="640" height="360"
+            onerror="this.style.display='none'"/>
+        </div>
+        <div class="px-4 py-3">
+          <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant">Coma-ruga</p>
+          <p class="text-[10px] tracking-widest uppercase mt-0.5" style="color:#e9c176;">43880</p>
+        </div>
+      </li>
+
+      <!-- ── L'Arboç ── -->
+      <li class="group relative rounded-xl overflow-hidden border border-outline-variant/20 shadow-lg bg-surface-container-low transition-all duration-300 hover:-translate-y-1 hover:border-tertiary/40 hover:shadow-xl">
+        <a href="zonas/larboc.html" class="absolute inset-0 z-10" aria-label="Cerrajero urgente en L'Arboç"></a>
+        <div class="relative aspect-video overflow-hidden"
+             style="background-color: var(--md-sys-color-surface-container-highest, #2a2a2a); background-image: linear-gradient(rgba(233,193,118,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(233,193,118,0.06) 1px, transparent 1px); background-size: 24px 24px;">
+          <img
+            src="img/cobertura/larboc.webp"
+            alt="L'Arboç — zona de cobertura Keyron Cerrajeros"
+            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            loading="lazy"
+            width="640" height="360"
+            onerror="this.style.display='none'"/>
+        </div>
+        <div class="px-4 py-3">
+          <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant">L'Arboç</p>
+          <p class="text-[10px] tracking-widest uppercase mt-0.5" style="color:#e9c176;">43720</p>
+        </div>
+      </li>
+
+      <!-- ── Bellvei ── -->
+      <li class="group relative rounded-xl overflow-hidden border border-outline-variant/20 shadow-lg bg-surface-container-low transition-all duration-300 hover:-translate-y-1 hover:border-tertiary/40 hover:shadow-xl">
+        <a href="zonas/bellvei.html" class="absolute inset-0 z-10" aria-label="Cerrajero urgente en Bellvei"></a>
+        <div class="relative aspect-video overflow-hidden"
+             style="background-color: var(--md-sys-color-surface-container-highest, #2a2a2a); background-image: linear-gradient(rgba(233,193,118,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(233,193,118,0.06) 1px, transparent 1px); background-size: 24px 24px;">
+          <img
+            src="img/cobertura/bellvei.webp"
+            alt="Bellvei — zona de cobertura Keyron Cerrajeros"
+            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            loading="lazy"
+            width="640" height="360"
+            onerror="this.style.display='none'"/>
+        </div>
+        <div class="px-4 py-3">
+          <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant">Bellvei</p>
+          <p class="text-[10px] tracking-widest uppercase mt-0.5" style="color:#e9c176;">43719</p>
+        </div>
+      </li>
+
+      <!-- ── Santa Oliva ── -->
+      <li class="group relative rounded-xl overflow-hidden border border-outline-variant/20 shadow-lg bg-surface-container-low transition-all duration-300 hover:-translate-y-1 hover:border-tertiary/40 hover:shadow-xl">
+        <a href="zonas/santa-oliva.html" class="absolute inset-0 z-10" aria-label="Cerrajero urgente en Santa Oliva"></a>
+        <div class="relative aspect-video overflow-hidden"
+             style="background-color: var(--md-sys-color-surface-container-highest, #2a2a2a); background-image: linear-gradient(rgba(233,193,118,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(233,193,118,0.06) 1px, transparent 1px); background-size: 24px 24px;">
+          <img
+            src="img/cobertura/santa-oliva.webp"
+            alt="Santa Oliva — zona de cobertura Keyron Cerrajeros"
+            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            loading="lazy"
+            width="640" height="360"
+            onerror="this.style.display='none'"/>
+        </div>
+        <div class="px-4 py-3">
+          <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant">Santa Oliva</p>
+          <p class="text-[10px] tracking-widest uppercase mt-0.5" style="color:#e9c176;">43710</p>
+        </div>
+      </li>
+
+      <!-- ── La Bisbal del Penedès ── -->
+      <li class="group relative rounded-xl overflow-hidden border border-outline-variant/20 shadow-lg bg-surface-container-low transition-all duration-300 hover:-translate-y-1 hover:border-tertiary/40 hover:shadow-xl">
+        <a href="zonas/la-bisbal-del-penedes.html" class="absolute inset-0 z-10" aria-label="Cerrajero urgente en La Bisbal del Penedès"></a>
+        <div class="relative aspect-video overflow-hidden"
+             style="background-color: var(--md-sys-color-surface-container-highest, #2a2a2a); background-image: linear-gradient(rgba(233,193,118,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(233,193,118,0.06) 1px, transparent 1px); background-size: 24px 24px;">
+          <img
+            src="img/cobertura/bisbal-penedes.webp"
+            alt="La Bisbal del Penedès — zona de cobertura Keyron Cerrajeros"
+            class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            loading="lazy"
+            width="640" height="360"
+            onerror="this.style.display='none'"/>
+        </div>
+        <div class="px-4 py-3">
+          <p class="text-xs font-bold tracking-widest uppercase text-on-surface-variant">La Bisbal del Penedès</p>
+          <p class="text-[10px] tracking-widest uppercase mt-0.5" style="color:#e9c176;">43717</p>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ── Testimonios ───────────────────────────────────── -->
+  <section id="resenas" class="py-32 px-6 md:px-24 bg-surface overflow-hidden">
+
+    <!-- Cabecera + bloque de puntuación -->
+    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-20 gap-12">
+      <div class="max-w-2xl">
+        <p class="text-sm tracking-[0.3em] font-bold text-tertiary uppercase mb-4">Reseñas verificadas</p>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-on-surface leading-tight">Lo que dicen nuestros clientes de El Vendrell, Calafell y Cunit.</h2>
+      </div>
+
+      <!-- Aggregate score glass block -->
+      <div class="flex-shrink-0 depth-card flex items-center gap-8 px-8 py-6" style="min-width: 260px;">
+        <div class="text-center">
+          <p class="text-5xl font-black text-on-surface tracking-tighter leading-none">4,9</p>
+          <div class="flex text-tertiary mt-2 justify-center" style="gap:2px;" aria-label="4,9 de 5 estrellas en Google">
+            <span class="material-symbols-outlined material-symbols-filled" style="font-size:16px;" aria-hidden="true">star</span>
+            <span class="material-symbols-outlined material-symbols-filled" style="font-size:16px;" aria-hidden="true">star</span>
+            <span class="material-symbols-outlined material-symbols-filled" style="font-size:16px;" aria-hidden="true">star</span>
+            <span class="material-symbols-outlined material-symbols-filled" style="font-size:16px;" aria-hidden="true">star</span>
+            <span class="material-symbols-outlined material-symbols-filled" style="font-size:16px;" aria-hidden="true">star</span>
+          </div>
+          <p class="text-[9px] tracking-[0.22em] font-bold uppercase mt-2" style="color: rgba(194,206,234,0.45);">Google Reviews</p>
+        </div>
+        <div class="self-stretch w-px" style="background: rgba(100,140,200,0.12);"></div>
+        <div class="text-center">
+          <p class="text-3xl font-black text-on-surface leading-none">+80</p>
+          <p class="text-[9px] tracking-[0.2em] font-bold uppercase mt-2" style="color: rgba(194,206,234,0.45);">Clientes</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid de tarjetas -->
+    <ul class="grid grid-cols-1 md:grid-cols-3 gap-5 list-none">
+
+      <!-- 01 — Marc Rovira · acento Oro -->
+      <li class="depth-card card-hover flex flex-col p-8 gap-5">
+        <!-- Comilla decorativa -->
+        <div aria-hidden="true" class="font-black select-none leading-none"
+             style="font-size: 5rem; line-height: 0.75; color: rgba(212,174,94,0.18); font-family: Georgia, 'Times New Roman', serif; margin-top: 0.15em;">"</div>
+        <!-- Estrellas individuales -->
+        <div class="flex" style="gap:2px; color: #e9c176;" aria-label="5 de 5 estrellas">
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+        </div>
+        <!-- Texto -->
+        <blockquote class="flex-1">
+          <p class="text-[15px] text-on-surface-variant leading-relaxed font-light">"Servicio impecable. Llegaron en 15 minutos exactos y abrieron la puerta sin causar un solo rasguño. El precio fue el acordado por teléfono."</p>
+        </blockquote>
+        <!-- Divisor -->
+        <div class="h-px" style="background: rgba(100,140,200,0.10);"></div>
+        <!-- Autor -->
+        <figcaption class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold"
+               style="background: linear-gradient(135deg, rgba(212,174,94,0.22) 0%, rgba(212,174,94,0.08) 100%); border: 1px solid rgba(212,174,94,0.28); color: #d4ae5e;" aria-hidden="true">MR</div>
+          <div class="min-w-0">
+            <p class="font-bold text-on-surface text-sm tracking-tight">Marc Rovira</p>
+            <p class="text-[10px] tracking-wider uppercase truncate" style="color: rgba(194,206,234,0.45);">Propietario de local · El Vendrell</p>
+          </div>
+          <span class="ml-auto text-[8px] font-bold tracking-[0.18em] uppercase flex-shrink-0" style="color: rgba(100,140,200,0.38);">Google</span>
+        </figcaption>
+      </li>
+
+      <!-- 02 — Elena Guasch · acento Acero azul -->
+      <li class="depth-card card-hover flex flex-col p-8 gap-5">
+        <div aria-hidden="true" class="font-black select-none leading-none"
+             style="font-size: 5rem; line-height: 0.75; color: rgba(110,168,212,0.16); font-family: Georgia, 'Times New Roman', serif; margin-top: 0.15em;">"</div>
+        <div class="flex" style="gap:2px; color: #e9c176;" aria-label="5 de 5 estrellas">
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+        </div>
+        <blockquote class="flex-1">
+          <p class="text-[15px] text-on-surface-variant leading-relaxed font-light">"Profesionalidad total. Me asesoraron sobre el cambio de bombines antibumping para mi casa. Rápidos, limpios y con garantía por escrito."</p>
+        </blockquote>
+        <div class="h-px" style="background: rgba(100,140,200,0.10);"></div>
+        <figcaption class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold"
+               style="background: linear-gradient(135deg, rgba(110,168,212,0.22) 0%, rgba(110,168,212,0.08) 100%); border: 1px solid rgba(110,168,212,0.28); color: #6ea8d4;" aria-hidden="true">EG</div>
+          <div class="min-w-0">
+            <p class="font-bold text-on-surface text-sm tracking-tight">Elena Guasch</p>
+            <p class="text-[10px] tracking-wider uppercase truncate" style="color: rgba(194,206,234,0.45);">Propietaria · Calafell</p>
+          </div>
+          <span class="ml-auto text-[8px] font-bold tracking-[0.18em] uppercase flex-shrink-0" style="color: rgba(100,140,200,0.38);">Google</span>
+        </figcaption>
+      </li>
+
+      <!-- 03 — Jordi P. · acento Pervinca -->
+      <li class="depth-card card-hover flex flex-col p-8 gap-5">
+        <div aria-hidden="true" class="font-black select-none leading-none"
+             style="font-size: 5rem; line-height: 0.75; color: rgba(136,153,204,0.16); font-family: Georgia, 'Times New Roman', serif; margin-top: 0.15em;">"</div>
+        <div class="flex" style="gap:2px; color: #e9c176;" aria-label="5 de 5 estrellas">
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+          <span class="material-symbols-outlined material-symbols-filled" style="font-size:14px;" aria-hidden="true">star</span>
+        </div>
+        <blockquote class="flex-1">
+          <p class="text-[15px] text-on-surface-variant leading-relaxed font-light">"Llamé de madrugada un domingo y en menos de media hora estaba dentro de casa. Muy recomendables por su seriedad y rapidez en El Vendrell."</p>
+        </blockquote>
+        <div class="h-px" style="background: rgba(100,140,200,0.10);"></div>
+        <figcaption class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold"
+               style="background: linear-gradient(135deg, rgba(136,153,204,0.22) 0%, rgba(136,153,204,0.08) 100%); border: 1px solid rgba(136,153,204,0.28); color: #8899cc;" aria-hidden="true">JP</div>
+          <div class="min-w-0">
+            <p class="font-bold text-on-surface text-sm tracking-tight">Jordi P.</p>
+            <p class="text-[10px] tracking-wider uppercase truncate" style="color: rgba(194,206,234,0.45);">Residente · El Vendrell</p>
+          </div>
+          <span class="ml-auto text-[8px] font-bold tracking-[0.18em] uppercase flex-shrink-0" style="color: rgba(100,140,200,0.38);">Google</span>
+        </figcaption>
+      </li>
+
+    </ul>
+  </section>
+
+  <!-- ── FAQ ───────────────────────────────────────────── -->
+  <section id="faq" class="py-32 px-6 md:px-24 bg-surface-container-low">
+    <div class="max-w-3xl mx-auto">
+
+      <!-- Cabecera -->
+      <div class="mb-16">
+        <div class="inline-flex items-center gap-2 mb-5">
+          <span class="w-2 h-2 rounded-full bg-tertiary" aria-hidden="true"></span>
+          <span class="text-[10px] tracking-[0.25em] font-bold uppercase" style="color: rgba(212,174,94,0.8);">Lo que más nos preguntan</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black tracking-tighter text-on-surface leading-[1.1]">
+          Preguntas frecuentes<br/>sobre cerrajería en El Vendrell
+        </h2>
+      </div>
+
+      <!-- Acordeón -->
+      <div role="list">
+
+        <details class="faq-item" role="listitem">
+          <summary>
+            <span class="text-[11px] font-black tracking-widest w-6 flex-shrink-0" style="color: rgba(212,174,94,0.4);">01</span>
+            <span class="faq-question flex-1 font-semibold text-on-surface text-base tracking-tight transition-colors duration-200">
+              ¿Cuánto tarda en llegar un cerrajero en El Vendrell?
+            </span>
+            <span class="material-symbols-outlined faq-chevron" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="faq-body">
+            <p class="text-on-surface-variant font-light leading-relaxed text-sm">
+              Garantizamos una respuesta inferior a <strong class="text-on-surface font-semibold">20 minutos</strong> en todo el núcleo de El Vendrell y urbanizaciones cercanas. Tenemos técnicos posicionados en la comarca de forma permanente, sin centralitas externas.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item" role="listitem">
+          <summary>
+            <span class="text-[11px] font-black tracking-widest w-6 flex-shrink-0" style="color: rgba(212,174,94,0.4);">02</span>
+            <span class="faq-question flex-1 font-semibold text-on-surface text-base tracking-tight transition-colors duration-200">
+              ¿Dáis presupuesto antes de ir?
+            </span>
+            <span class="material-symbols-outlined faq-chevron" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="faq-body">
+            <p class="text-on-surface-variant font-light leading-relaxed text-sm">
+              Sí. Damos un <strong class="text-on-surface font-semibold">presupuesto cerrado por teléfono</strong> antes de desplazarnos. El precio acordado es el precio final: sin costes ocultos de ningún tipo.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item" role="listitem">
+          <summary>
+            <span class="text-[11px] font-black tracking-widest w-6 flex-shrink-0" style="color: rgba(212,174,94,0.4);">03</span>
+            <span class="faq-question flex-1 font-semibold text-on-surface text-base tracking-tight transition-colors duration-200">
+              ¿Podéis abrir mi puerta sin romperla?
+            </span>
+            <span class="material-symbols-outlined faq-chevron" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="faq-body">
+            <p class="text-on-surface-variant font-light leading-relaxed text-sm">
+              En la gran mayoría de casos sí. Aplicamos técnicas de <strong class="text-on-surface font-semibold">apertura no destructiva</strong> adaptadas al tipo de cerradura. Solo en casos extremos —cerrojo echado por dentro, puerta bloqueada por impacto— puede ser necesaria una intervención parcial, siempre comunicada y presupuestada antes de actuar.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item" role="listitem">
+          <summary>
+            <span class="text-[11px] font-black tracking-widest w-6 flex-shrink-0" style="color: rgba(212,174,94,0.4);">04</span>
+            <span class="faq-question flex-1 font-semibold text-on-surface text-base tracking-tight transition-colors duration-200">
+              ¿Tenéis garantía en los trabajos?
+            </span>
+            <span class="material-symbols-outlined faq-chevron" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="faq-body">
+            <p class="text-on-surface-variant font-light leading-relaxed text-sm">
+              Todos nuestros trabajos y materiales cuentan con <strong class="text-on-surface font-semibold">garantía oficial por escrito</strong>. Somos técnicos homologados y cumplimos con la normativa española de seguridad vigente. Puedes exigirnos la documentación en cualquier momento.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item" role="listitem">
+          <summary>
+            <span class="text-[11px] font-black tracking-widest w-6 flex-shrink-0" style="color: rgba(212,174,94,0.4);">05</span>
+            <span class="faq-question flex-1 font-semibold text-on-surface text-base tracking-tight transition-colors duration-200">
+              ¿Cubrís El Vendrell, Calafell, Cunit y otros municipios del Baix Penedès?
+            </span>
+            <span class="material-symbols-outlined faq-chevron" aria-hidden="true">expand_more</span>
+          </summary>
+          <div class="faq-body">
+            <p class="text-on-surface-variant font-light leading-relaxed text-sm">
+              Sí. Damos servicio a todos los municipios de nuestra zona de cobertura: <strong class="text-on-surface font-semibold">El Vendrell, Coma-ruga, Calafell, Segur de Calafell, Cunit, L'Arboç, Bellvei, Santa Oliva y La Bisbal del Penedès</strong>. Llámanos y confirmamos el tiempo de llegada a tu dirección exacta.
+            </p>
+          </div>
+        </details>
+
+      </div>
+
+      <!-- CTA inferior -->
+      <div class="mt-16 pt-10 border-t flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
+           style="border-color: rgba(255,255,255,0.06);">
+        <p class="text-on-surface-variant font-light text-sm">¿Tienes otra duda? Te respondemos al instante.</p>
+        <a href="tel:+34627682821"
+           class="inline-flex items-center gap-2 font-bold text-sm tracking-widest uppercase cursor-pointer transition-colors duration-200 hover:opacity-80"
+           style="color: #d4ae5e;">
+          <span class="material-symbols-outlined text-base" aria-hidden="true">call</span>
+          Llamar ahora
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ─── FOOTER ────────────────────────────────────────── -->
+<footer class="w-full" style="background: linear-gradient(180deg, #0d1625 0%, #091020 100%); border-top: 1px solid rgba(212,174,94,0.15);">
+
+  <!-- ── Banda CTA urgencias ── -->
+  <div class="px-6 md:px-24 py-10 border-b" style="border-color: rgba(255,255,255,0.06); background: rgba(212,174,94,0.04);">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div>
+        <p class="text-[10px] tracking-[0.25em] font-bold uppercase mb-1" style="color: rgba(212,174,94,0.7);">Atención inmediata · 24h · 365 días</p>
+        <p class="text-on-surface text-lg font-light">Sin centralita. Atendemos nosotros.</p>
+      </div>
+      <a href="tel:+34627682821"
+         class="inline-flex items-center gap-3 px-8 py-4 font-black tracking-widest uppercase text-sm cursor-pointer transition-all duration-200 hover:brightness-110 flex-shrink-0"
+         style="background: rgba(212,174,94,0.12); border: 1px solid rgba(212,174,94,0.35); color: #d4ae5e;">
+        <span class="material-symbols-outlined text-base" aria-hidden="true">call</span>
+        +34 627 682 821
+      </a>
+    </div>
+  </div>
+
+  <!-- ── Columnas principales ── -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-6 md:px-24 py-16">
+
+    <!-- Col 1: Marca -->
+    <div>
+      <p class="text-sm font-black tracking-[0.3em] uppercase mb-1" style="color: #d4ae5e;">KEYRON CERRAJEROS</p>
+      <p class="text-[10px] tracking-widest text-outline-variant uppercase mb-6">Cerrajería técnica · Costa Daurada</p>
+      <p class="text-on-surface-variant font-light text-sm leading-relaxed mb-6">
+        Especialistas en apertura de puertas, cambio de bombines y sistemas de seguridad de alta gama en el Baix Penedès.
+      </p>
+      <div class="flex flex-wrap gap-x-3 gap-y-1">
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">El Vendrell</span>
+        <span class="text-outline-variant/30 text-[10px]">·</span>
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">Coma-ruga</span>
+        <span class="text-outline-variant/30 text-[10px]">·</span>
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">Calafell</span>
+        <span class="text-outline-variant/30 text-[10px]">·</span>
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">Segur de Calafell</span>
+        <span class="text-outline-variant/30 text-[10px]">·</span>
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">Cunit</span>
+        <span class="text-outline-variant/30 text-[10px]">·</span>
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">L'Arboç</span>
+        <span class="text-outline-variant/30 text-[10px]">·</span>
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">Bellvei</span>
+        <span class="text-outline-variant/30 text-[10px]">·</span>
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">Santa Oliva</span>
+        <span class="text-outline-variant/30 text-[10px]">·</span>
+        <span class="text-[10px] tracking-widest text-outline-variant/60 uppercase">La Bisbal del Penedès</span>
+      </div>
+    </div>
+
+    <!-- Col 2: Contacto -->
+    <div>
+      <p class="text-[10px] tracking-[0.25em] font-bold uppercase mb-6" style="color: rgba(212,174,94,0.7);">Contacto</p>
+      <address class="not-italic space-y-5">
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-base flex-shrink-0" aria-hidden="true" style="color: #d4ae5e;">call</span>
+          <div>
+            <a href="tel:+34627682821"
+               class="text-on-surface font-bold text-base tracking-wide hover:text-tertiary transition-colors duration-200 cursor-pointer">
+              +34 627 682 821
+            </a>
+            <p class="text-[10px] tracking-widest text-outline-variant uppercase mt-0.5">Teléfono 24h</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-base flex-shrink-0" aria-hidden="true" style="color: #d4ae5e;">location_on</span>
+          <div>
+            <p class="text-on-surface-variant font-light text-sm">43700 El Vendrell, Tarragona</p>
+            <p class="text-[10px] tracking-widest text-outline-variant uppercase mt-0.5">Zona de operaciones</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-base flex-shrink-0" aria-hidden="true" style="color: #d4ae5e;">schedule</span>
+          <div>
+            <p class="text-on-surface-variant font-light text-sm">24 horas · 365 días</p>
+          </div>
+        </div>
+      </address>
+    </div>
+
+    <!-- Col 3: Legal -->
+    <nav aria-label="Información legal">
+      <p class="text-[10px] tracking-[0.25em] font-bold uppercase mb-6" style="color: rgba(212,174,94,0.7);">Legal</p>
+      <ul class="flex flex-col gap-4 list-none">
+        <li>
+          <a class="text-outline-variant hover:text-on-surface transition-colors duration-200 font-light text-sm tracking-widest uppercase cursor-pointer" href="#">
+            Aviso legal
+          </a>
+        </li>
+        <li>
+          <a class="text-outline-variant hover:text-on-surface transition-colors duration-200 font-light text-sm tracking-widest uppercase cursor-pointer" href="politica-de-privacidad.html">
+            Política de privacidad
+          </a>
+        </li>
+        <li>
+          <a class="text-outline-variant hover:text-on-surface transition-colors duration-200 font-light text-sm tracking-widest uppercase cursor-pointer" href="politica-de-cookies.html">
+            Cookies
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <!-- ── Barra inferior copyright ── -->
+  <div class="px-6 md:px-24 py-5 flex flex-col md:flex-row items-center justify-between gap-3"
+       style="border-top: 1px solid rgba(255,255,255,0.05);">
+    <p class="text-outline-variant/50 font-light text-[10px] tracking-widest uppercase">
+      © 2024 Keyron Cerrajeros · Todos los derechos reservados
+    </p>
+    <div class="flex items-center gap-2">
+      <span class="w-1.5 h-1.5 rounded-full bg-tertiary/60 animate-pulse" aria-hidden="true"></span>
+      <p class="text-[10px] tracking-[0.2em] font-bold uppercase" style="color: rgba(212,174,94,0.5);">Sistema activo · Cobertura permanente</p>
+    </div>
+  </div>
+
+</footer>
+
+
+<!-- ─── STICKY CONTACT / FLOATING CTA ──────────────────────
+     Mobile  → barra fija en la parte inferior (2 botones iguales)
+     Desktop → botones flotantes circulares con tooltip
+─────────────────────────────────────────────────────────── -->
+
+<!-- ─── MOBILE: Sticky bottom bar ──────────────────────── -->
+<div class="fixed bottom-0 left-0 right-0 z-50 md:hidden mobile-cta-bar"
+     role="complementary" aria-label="Acceso rápido de contacto">
+  <div class="flex">
+
+    <a href="tel:+34627682821" class="mobile-cta-call">
+      <span class="material-symbols-outlined flex-shrink-0" aria-hidden="true"
+            style="font-size:18px;font-variation-settings:'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 20;">call</span>
+      Llamar ahora
+    </a>
+
+    <a href="https://wa.me/34627682821"
+       target="_blank" rel="noopener noreferrer"
+       class="mobile-cta-wa"
+       aria-label="Contactar por WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+           class="w-[18px] h-[18px] flex-shrink-0" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      WhatsApp
+    </a>
+
+  </div>
+</div>
+
+<!-- ─── DESKTOP: Floating pills bottom-right ───────────── -->
+<div class="hidden md:flex fixed bottom-8 right-8 z-50 flex-col gap-3 items-end"
+     role="complementary" aria-label="Acceso rápido de contacto">
+
+  <!-- Llamar -->
+  <a href="tel:+34627682821"
+     class="fab-pill fab-pill-call"
+     aria-label="Llamar ahora: +34 627 682 821">
+    <span class="fab-icon" aria-hidden="true">
+      <span class="material-symbols-outlined" style="font-size:20px;font-variation-settings:'FILL' 1,'wght' 500,'GRAD' 0,'opsz' 20;color:#d4ae5e;">call</span>
+    </span>
+    <span class="fab-label" style="color:#d4ae5e;">Llamar ahora</span>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/34627682821"
+     target="_blank" rel="noopener noreferrer"
+     class="fab-pill fab-pill-wa"
+     aria-label="Contactar por WhatsApp">
+    <span class="fab-icon" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#25D366"
+           class="w-5 h-5" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </span>
+    <span class="fab-label" style="color:#25D366;">Chat WhatsApp</span>
+  </a>
+
+</div>
+
+  <script>
+    (function () {
+      var nav      = document.getElementById('main-nav');
+      var drawer   = document.getElementById('mobile-drawer');
+      var btnHamb  = document.getElementById('btn-hamburger');
+      var iconMenu = document.getElementById('icon-menu');
+      var iconX    = document.getElementById('icon-close');
+
+      function openDrawer() {
+        drawer.classList.add('is-open');
+        drawer.setAttribute('aria-hidden', 'false');
+        btnHamb.setAttribute('aria-expanded', 'true');
+        iconMenu.classList.add('hidden');
+        iconX.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeDrawer() {
+        drawer.classList.remove('is-open');
+        drawer.setAttribute('aria-hidden', 'true');
+        btnHamb.setAttribute('aria-expanded', 'false');
+        iconMenu.classList.remove('hidden');
+        iconX.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+
+      btnHamb.addEventListener('click', function () {
+        drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
+      });
+
+      drawer.querySelectorAll('.drawer-link').forEach(function (link) {
+        link.addEventListener('click', closeDrawer);
+      });
+
+      window.addEventListener('scroll', function () {
+        nav.classList.toggle('is-scrolled', window.scrollY > 60);
+      }, { passive: true });
+    })();
+  </script>
+</body>
+</html>

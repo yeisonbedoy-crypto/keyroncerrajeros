@@ -1,0 +1,19 @@
+node_modules/
+
+# IDE
+.idea/
+
+# Claude Code / agentes internos
+.claude/
+.agents/
+skills-lock.json
+CLAUDE.md
+
+# Documentos de trabajo locales
+*.odt
+*.pdf
+.~lock.*
+
+# OS
+.DS_Store
+Thumbs.db

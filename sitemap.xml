@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.keyroncerrajeros.es/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Servicios -->
+  <url>
+    <loc>https://www.keyroncerrajeros.es/servicios/apertura-de-puertas.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.keyroncerrajeros.es/servicios/cambio-de-bombines.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.keyroncerrajeros.es/servicios/cerraduras-antibumping.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.keyroncerrajeros.es/servicios/cierres-metalicos.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.keyroncerrajeros.es/servicios/apertura-de-vehiculos.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Zonas de cobertura -->
+  <url>
+    <loc>https://www.keyroncerrajeros.es/zonas/el-vendrell.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.keyroncerrajeros.es/zonas/calafell.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.keyroncerrajeros.es/zonas/segur-de-calafell.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.keyroncerrajeros.es/zonas/cunit.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.keyroncerrajeros.es/zonas/coma-ruga.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.keyroncerrajeros.es/zonas/larboc.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.keyroncerrajeros.es/zonas/bellvei.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.keyroncerrajeros.es/zonas/santa-oliva.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.keyroncerrajeros.es/zonas/la-bisbal-del-penedes.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Otras páginas -->
+  <url>
+    <loc>https://www.keyroncerrajeros.es/quienes-somos.html</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
