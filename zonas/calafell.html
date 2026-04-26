@@ -399,11 +399,18 @@
       <li>
         <a class="text-on-surface-variant hover:text-tertiary tracking-widest font-medium uppercase text-[11px] transition-colors duration-300" href="#faq">FAQ</a>
       </li>
+      <li>
+        <a class="text-on-surface-variant hover:text-tertiary tracking-widest font-medium uppercase text-[11px] transition-colors duration-300" href="../index.html#emergencias">Urgencias</a>
+      </li>
     </ul>
 
-    <a href="tel:+34627682821" class="hidden md:inline-flex bg-tertiary text-background px-6 py-2.5 font-black text-[11px] tracking-widest uppercase hover:bg-[#d4ae5e] transition-colors duration-300 items-center gap-2 flex-shrink-0">
-      <span class="material-symbols-outlined flex-shrink-0" aria-hidden="true" style="font-size:15px;font-variation-settings:'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 20;">call</span>
-      URGENCIAS 24H
+    <a href="tel:+34627682821"
+       class="hidden md:inline-flex items-center gap-2.5 flex-shrink-0 cursor-pointer"
+       style="background:rgba(15,23,42,0.72);border:1px solid rgba(233,193,118,0.48);padding:9px 18px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 0 18px rgba(233,193,118,0.10),inset 0 1px 0 rgba(233,193,118,0.07);transition:all 250ms ease;"
+       onmouseover="this.style.borderColor='rgba(233,193,118,0.80)';this.style.boxShadow='0 0 28px rgba(233,193,118,0.22),inset 0 1px 0 rgba(233,193,118,0.12)'"
+       onmouseout="this.style.borderColor='rgba(233,193,118,0.48)';this.style.boxShadow='0 0 18px rgba(233,193,118,0.10),inset 0 1px 0 rgba(233,193,118,0.07)'">
+      <span class="material-symbols-outlined flex-shrink-0" aria-hidden="true" style="font-size:15px;color:#e9c176;font-variation-settings:'FILL' 1,'wght' 500,'GRAD' 0,'opsz' 20;">phone_in_talk</span>
+      <span style="font-size:11px;font-weight:900;letter-spacing:0.20em;text-transform:uppercase;color:#e9c176;">Urgencias 24h</span>
     </a>
 
     <button id="btn-hamburger" class="md:hidden flex items-center justify-center w-10 h-10 text-on-surface hover:text-tertiary transition-colors duration-300 flex-shrink-0" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-drawer">
@@ -429,6 +436,10 @@
         <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors duration-300" style="font-size:18px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 20;">help_outline</span>
         FAQ
       </a>
+      <a href="../index.html#emergencias" class="drawer-link group flex items-center gap-4 text-on-surface hover:text-tertiary tracking-widest font-medium uppercase text-sm transition-colors duration-300">
+        <span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary transition-colors duration-300" style="font-size:18px;font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 20;">emergency</span>
+        Urgencias
+      </a>
       <div class="w-10 h-px my-2" style="background: rgba(233,193,118,0.25);"></div>
       <a href="tel:+34627682821" class="drawer-link inline-flex items-center gap-3 px-8 py-4 font-black text-sm tracking-widest uppercase transition-all duration-300" style="background: rgba(233,193,118,0.08); border: 1px solid rgba(233,193,118,0.28); color: #e9c176;">
         <span class="material-symbols-outlined" style="font-size:20px;font-variation-settings:'FILL' 1,'wght' 600,'GRAD' 0,'opsz' 20;color:#e9c176;">call</span>
@@ -443,7 +454,7 @@
 <main class="pt-20">
 
   <!-- ── Hero ──────────────────────────────────────────── -->
-  <section id="inicio" class="relative flex items-center overflow-hidden py-28 md:py-40">
+  <section id="inicio" class="relative flex items-center overflow-hidden py-12 md:py-16">
     <div class="absolute inset-0 z-0">
       <!-- Blob dorado izquierda (principal) -->
       <div class="hero-glow-blob absolute pointer-events-none rounded-full"
@@ -534,8 +545,99 @@
     </ul>
   </section>
 
+  <!-- ── Servicios disponibles en Calafell ───────────────── -->
+  <section class="py-10 px-6" style="background: linear-gradient(180deg, transparent 0%, rgba(233,193,118,0.02) 100%);">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="mb-12">
+        <p class="text-[10px] tracking-[0.3em] font-bold uppercase mb-3" style="color:#e9c176;">Servicios certificados</p>
+        <h2 class="text-3xl font-bold tracking-tight text-on-surface mb-3">Servicios disponibles en Calafell</h2>
+        <p class="text-sm text-on-surface-variant font-light max-w-xl leading-relaxed">Técnicos certificados con respuesta garantizada. Presupuesto cerrado antes de empezar — sin sorpresas.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <a href="../servicios/apertura-de-puertas-calafell.html" class="group depth-card card-hover tertiary-glow rounded-xl p-6 flex flex-col gap-4 cursor-pointer">
+          <div class="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(233,193,118,0.10); border:1px solid rgba(233,193,118,0.22);">
+            <span class="material-symbols-outlined text-[22px]" style="color:#e9c176; font-variation-settings:'wght' 300;">lock_open</span>
+          </div>
+          <div class="flex-1">
+            <p class="font-bold text-on-surface text-[15px] tracking-tight mb-0.5">Apertura de puertas</p>
+            <p class="text-[10px] tracking-[0.15em] uppercase font-medium mb-1 flex items-center gap-1" style="color:rgba(233,193,118,0.5);"><span class="material-symbols-outlined text-[11px]" style="font-variation-settings:'wght' 300;">location_on</span>Calafell</p>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">Apertura no destructiva garantizada. Sin rotura de puerta ni marco.</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold tracking-[0.18em] uppercase px-2 py-1 rounded" style="background:rgba(233,193,118,0.10); color:#e9c176; border:1px solid rgba(233,193,118,0.22);">30 min</span>
+            <span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-tertiary transition-colors duration-200" style="font-variation-settings:'wght' 300;">arrow_forward</span>
+          </div>
+        </a>
+
+        <a href="../servicios/cambio-de-bombines-calafell.html" class="group depth-card card-hover tertiary-glow rounded-xl p-6 flex flex-col gap-4 cursor-pointer">
+          <div class="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(233,193,118,0.10); border:1px solid rgba(233,193,118,0.22);">
+            <span class="material-symbols-outlined text-[22px]" style="color:#e9c176; font-variation-settings:'wght' 300;">key</span>
+          </div>
+          <div class="flex-1">
+            <p class="font-bold text-on-surface text-[15px] tracking-tight mb-0.5">Cambio de bombines</p>
+            <p class="text-[10px] tracking-[0.15em] uppercase font-medium mb-1 flex items-center gap-1" style="color:rgba(233,193,118,0.5);"><span class="material-symbols-outlined text-[11px]" style="font-variation-settings:'wght' 300;">location_on</span>Calafell</p>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">Cilindros antibumping de alta seguridad. Mul-T-Lock, TESA Abloy.</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold tracking-[0.18em] uppercase px-2 py-1 rounded" style="background:rgba(233,193,118,0.10); color:#e9c176; border:1px solid rgba(233,193,118,0.22);">mismo día</span>
+            <span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-tertiary transition-colors duration-200" style="font-variation-settings:'wght' 300;">arrow_forward</span>
+          </div>
+        </a>
+
+        <a href="../servicios/cerraduras-antibumping-calafell.html" class="group depth-card card-hover tertiary-glow rounded-xl p-6 flex flex-col gap-4 cursor-pointer">
+          <div class="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(233,193,118,0.10); border:1px solid rgba(233,193,118,0.22);">
+            <span class="material-symbols-outlined text-[22px]" style="color:#e9c176; font-variation-settings:'wght' 300;">verified_user</span>
+          </div>
+          <div class="flex-1">
+            <p class="font-bold text-on-surface text-[15px] tracking-tight mb-0.5">Cerraduras antibumping</p>
+            <p class="text-[10px] tracking-[0.15em] uppercase font-medium mb-1 flex items-center gap-1" style="color:rgba(233,193,118,0.5);"><span class="material-symbols-outlined text-[11px]" style="font-variation-settings:'wght' 300;">location_on</span>Calafell</p>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">Protección certificada contra bumping, ganzúa y taladro.</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold tracking-[0.18em] uppercase px-2 py-1 rounded" style="background:rgba(233,193,118,0.10); color:#e9c176; border:1px solid rgba(233,193,118,0.22);">certificada</span>
+            <span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-tertiary transition-colors duration-200" style="font-variation-settings:'wght' 300;">arrow_forward</span>
+          </div>
+        </a>
+
+        <a href="../servicios/apertura-de-vehiculos-calafell.html" class="group depth-card card-hover tertiary-glow rounded-xl p-6 flex flex-col gap-4 cursor-pointer">
+          <div class="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(233,193,118,0.10); border:1px solid rgba(233,193,118,0.22);">
+            <span class="material-symbols-outlined text-[22px]" style="color:#e9c176; font-variation-settings:'wght' 300;">directions_car</span>
+          </div>
+          <div class="flex-1">
+            <p class="font-bold text-on-surface text-[15px] tracking-tight mb-0.5">Apertura de vehículos</p>
+            <p class="text-[10px] tracking-[0.15em] uppercase font-medium mb-1 flex items-center gap-1" style="color:rgba(233,193,118,0.5);"><span class="material-symbols-outlined text-[11px]" style="font-variation-settings:'wght' 300;">location_on</span>Calafell</p>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">Sin arañazos ni daños. Todas las marcas y modelos, 24 horas.</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold tracking-[0.18em] uppercase px-2 py-1 rounded" style="background:rgba(233,193,118,0.10); color:#e9c176; border:1px solid rgba(233,193,118,0.22);">30 min</span>
+            <span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-tertiary transition-colors duration-200" style="font-variation-settings:'wght' 300;">arrow_forward</span>
+          </div>
+        </a>
+
+        <a href="../servicios/cierres-metalicos-calafell.html" class="group depth-card card-hover tertiary-glow rounded-xl p-6 flex flex-col gap-4 cursor-pointer">
+          <div class="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(233,193,118,0.10); border:1px solid rgba(233,193,118,0.22);">
+            <span class="material-symbols-outlined text-[22px]" style="color:#e9c176; font-variation-settings:'wght' 300;">garage</span>
+          </div>
+          <div class="flex-1">
+            <p class="font-bold text-on-surface text-[15px] tracking-tight mb-0.5">Cierres metálicos</p>
+            <p class="text-[10px] tracking-[0.15em] uppercase font-medium mb-1 flex items-center gap-1" style="color:rgba(233,193,118,0.5);"><span class="material-symbols-outlined text-[11px]" style="font-variation-settings:'wght' 300;">location_on</span>Calafell</p>
+            <p class="text-xs text-on-surface-variant font-light leading-relaxed">Reparación urgente de persianas y cierres comerciales bloqueados.</p>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold tracking-[0.18em] uppercase px-2 py-1 rounded" style="background:rgba(233,193,118,0.10); color:#e9c176; border:1px solid rgba(233,193,118,0.22);">urgente</span>
+            <span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-tertiary transition-colors duration-200" style="font-variation-settings:'wght' 300;">arrow_forward</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ── Zona local ─────────────────────────────────────── -->
-  <section id="zona" class="py-24 px-6 md:px-24 bg-surface-container-lowest">
+  <section id="zona" class="py-12 px-6 md:px-24 bg-surface-container-lowest">
     <div class="max-w-5xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
@@ -630,7 +732,7 @@
   </section>
 
   <!-- ── FAQ ───────────────────────────────────────────── -->
-  <section id="faq" class="py-32 px-6 md:px-24 bg-surface-container-low">
+  <section id="faq" class="py-16 px-6 md:px-24 bg-surface-container-low">
     <div class="max-w-3xl mx-auto">
 
       <div class="mb-16">
@@ -736,39 +838,6 @@
     </div>
   </section>
 
-  <!-- ── Servicios disponibles en Calafell ───────────────── -->
-  <section class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-2xl font-bold tracking-tighter text-on-surface mb-8">
-      Servicios disponibles en Calafell
-    </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <a href="../servicios/apertura-de-puertas-calafell.html"
-         class="block p-5 border border-outline rounded-lg hover:border-primary transition-colors">
-        <span class="font-semibold text-on-surface">Apertura de puertas</span>
-        <p class="text-sm text-on-surface-variant mt-1">Sin rotura · 30 min</p>
-      </a>
-      <a href="../servicios/cambio-de-bombines-calafell.html"
-         class="block p-5 border border-outline rounded-lg hover:border-primary transition-colors">
-        <span class="font-semibold text-on-surface">Cambio de bombines</span>
-        <p class="text-sm text-on-surface-variant mt-1">Antibumping · mismo día</p>
-      </a>
-      <a href="../servicios/cerraduras-antibumping-calafell.html"
-         class="block p-5 border border-outline rounded-lg hover:border-primary transition-colors">
-        <span class="font-semibold text-on-surface">Cerraduras antibumping</span>
-        <p class="text-sm text-on-surface-variant mt-1">Mul-T-Lock, TESA Abloy</p>
-      </a>
-      <a href="../servicios/apertura-de-vehiculos-calafell.html"
-         class="block p-5 border border-outline rounded-lg hover:border-primary transition-colors">
-        <span class="font-semibold text-on-surface">Apertura de vehículos</span>
-        <p class="text-sm text-on-surface-variant mt-1">Todas las marcas · 30 min</p>
-      </a>
-      <a href="../servicios/cierres-metalicos-calafell.html"
-         class="block p-5 border border-outline rounded-lg hover:border-primary transition-colors">
-        <span class="font-semibold text-on-surface">Cierres metálicos</span>
-        <p class="text-sm text-on-surface-variant mt-1">Urgencias comerciales</p>
-      </a>
-    </div>
-  </section>
 
 </main>
 

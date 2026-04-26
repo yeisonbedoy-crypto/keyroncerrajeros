@@ -528,7 +528,7 @@
   <!-- ══════════════════════════════════════════════════════
        1. HERO — Apertura de Vehículos
   ══════════════════════════════════════════════════════ -->
-  <section id="inicio" class="relative min-h-[580px] md:min-h-[700px] flex items-center overflow-hidden py-24">
+  <section id="inicio" class="relative flex items-center overflow-hidden py-12 md:py-16">
 
     <!-- Capas decorativas de fondo -->
     <div class="absolute inset-0 z-0" aria-hidden="true">
@@ -545,8 +545,12 @@
            style="opacity:0.04; background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E&quot;);"></div>
     </div>
 
-    <!-- Contenido del hero -->
-    <div class="relative z-10 px-6 md:px-24 max-w-5xl">
+    <!-- Contenido del hero (2 columnas) -->
+    <div class="relative z-10 w-full px-6 md:px-24">
+      <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16 max-w-6xl">
+
+        <!-- Columna izquierda: texto -->
+        <div class="flex-1 min-w-0">
 
       <!-- Breadcrumb -->
       <nav aria-label="Ruta de navegación" class="mb-6">
@@ -602,13 +606,30 @@
         <span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">4,9 / 5 en Google</span>
       </div>
 
-    </div>
+        </div><!-- fin columna texto -->
+
+        <!-- Columna derecha: imagen -->
+        <div class="w-full lg:w-[420px] xl:w-[480px] flex-shrink-0">
+          <div class="depth-card overflow-hidden" style="aspect-ratio: 4/3; border-radius: 12px;">
+            <img
+              src="../img/fotos-varias/apertura-vehiculo2.webp"
+              alt="Apertura de vehiculo sin danos en Calafell - Keyron Cerrajeros"
+              class="w-full h-full object-cover"
+              loading="eager"
+              width="480"
+              height="360"
+            >
+          </div>
+        </div><!-- fin columna imagen -->
+
+      </div><!-- fin flex row -->
+    </div><!-- fin contenedor -->
   </section>
 
   <!-- ══════════════════════════════════════════════════════
        2. VALUE STACK — Composición estratificada
   ══════════════════════════════════════════════════════ -->
-  <section aria-labelledby="beneficios-heading" class="relative py-24 px-6 md:px-24 overflow-hidden" style="background: #0b1424;">
+  <section aria-labelledby="beneficios-heading" class="relative py-12 px-6 md:px-24 overflow-hidden" style="background: #0b1424;">
 
     <!-- ── Textura de fondo: cuadrícula de mapa abstracta ── -->
     <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -879,7 +900,7 @@
   <!-- ══════════════════════════════════════════════════════
        3. TIPOS DE VEHÍCULO
   ══════════════════════════════════════════════════════ -->
-  <section id="tipos-vehiculo" aria-labelledby="tipos-heading" class="py-28 px-6 md:px-24 bg-surface">
+  <section id="tipos-vehiculo" aria-labelledby="tipos-heading" class="py-20 px-6 md:px-24 bg-surface">
     <div class="mb-16 max-w-3xl">
       <p class="text-sm tracking-[0.3em] font-bold text-tertiary uppercase mb-3">Especialidades</p>
       <h2 id="tipos-heading" class="text-3xl md:text-5xl font-bold tracking-tight text-on-surface leading-tight">
@@ -1003,7 +1024,7 @@
   <!-- ══════════════════════════════════════════════════════
        4. AUTORIDAD LOCAL — SEO paragraph
   ══════════════════════════════════════════════════════ -->
-  <section aria-labelledby="autoridad-heading" class="py-20 px-6 md:px-24 bg-surface-container">
+  <section aria-labelledby="autoridad-heading" class="py-16 px-6 md:px-24 bg-surface-container">
     <div class="max-w-4xl">
       <p class="text-sm tracking-[0.3em] font-bold text-tertiary uppercase mb-4">Cobertura local</p>
       <h2 id="autoridad-heading" class="text-2xl md:text-3xl font-bold tracking-tight text-on-surface mb-6">
@@ -1072,7 +1093,7 @@
   <!-- ══════════════════════════════════════════════════════
        6. ZONAS DE COBERTURA
   ══════════════════════════════════════════════════════ -->
-  <section id="zonas" aria-labelledby="zonas-heading" class="py-20 px-6 md:px-24 bg-surface">
+  <section id="zonas" aria-labelledby="zonas-heading" class="py-16 px-6 md:px-24 bg-surface">
     <div class="mb-10">
       <p class="text-sm tracking-[0.3em] font-bold text-tertiary uppercase mb-3">Cobertura</p>
       <h2 id="zonas-heading" class="text-2xl md:text-3xl font-bold tracking-tight text-on-surface max-w-2xl">
@@ -1142,38 +1163,12 @@
     </p>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════
-       7. CTA MID-PAGE
-  ══════════════════════════════════════════════════════ -->
-  <section aria-label="Llamada a la acción urgente" class="py-16 px-6 md:px-24" style="background: linear-gradient(135deg, rgba(233,193,118,0.06) 0%, rgba(44,66,96,0.30) 100%); border-top: 1px solid rgba(233,193,118,0.12); border-bottom: 1px solid rgba(233,193,118,0.12);">
-    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 max-w-5xl mx-auto">
-      <div>
-        <p class="text-[10px] tracking-[0.25em] font-bold uppercase mb-2" style="color: rgba(212,174,94,0.7);">¿Coche cerrado ahora mismo?</p>
-        <p class="text-on-surface text-2xl font-bold tracking-tight leading-tight max-w-lg">
-          Te damos el precio antes de salir. Llegamos en 20 minutos.
-        </p>
-        <p class="text-sm text-on-surface-variant font-light mt-2">Sin romper el cristal. Sin recargos nocturnos. Sin intermediarios.</p>
-      </div>
-      <div class="flex flex-col sm:flex-row gap-4 flex-shrink-0">
-        <a href="tel:+34627682821"
-           class="cta-call text-white px-8 py-4 font-bold tracking-widest uppercase text-sm text-center inline-flex items-center justify-center gap-3 cursor-pointer">
-          <span class="material-symbols-outlined text-base" aria-hidden="true">call</span>
-          627 682 821
-        </a>
-        <a href="https://wa.me/34627682821"
-           target="_blank" rel="noopener noreferrer"
-           class="cta-secondary text-on-surface px-8 py-4 font-bold tracking-widest uppercase text-sm text-center inline-flex items-center justify-center gap-3 cursor-pointer">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#25D366" class="w-4 h-4 flex-shrink-0" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          WhatsApp
-        </a>
-      </div>
-    </div>
-  </section>
+
 
   <!-- ══════════════════════════════════════════════════════
        8. FAQ — Apertura de Vehículos
   ══════════════════════════════════════════════════════ -->
-  <section id="faq" aria-labelledby="faq-heading" class="py-28 px-6 md:px-24 bg-surface-container-low">
+  <section id="faq" aria-labelledby="faq-heading" class="py-20 px-6 md:px-24 bg-surface-container-low">
     <div class="max-w-3xl mx-auto">
 
       <div class="mb-16">
@@ -1243,7 +1238,7 @@
   <!-- ══════════════════════════════════════════════════════
        9. CTA FINAL
   ══════════════════════════════════════════════════════ -->
-  <section aria-label="CTA final" class="py-28 px-6 md:px-24 bg-surface-container-lowest">
+  <section aria-label="CTA final" class="py-20 px-6 md:px-24 bg-surface-container-lowest">
     <div class="max-w-3xl mx-auto text-center">
 
       <div class="inline-flex items-center gap-2 mb-6">
